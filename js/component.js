@@ -19,7 +19,7 @@ if(document.querySelector("header")){
                         </div>
                         <div class="de-flex-col header-col-mid">
                             <ul id="mainmenu">
-                                <li><a class="menu-item" href="index.html">Home</a>
+                                <li class="d-none"><a class="menu-item" href="index.html">Home</a>
                                     <ul class="mega">
                                         <li>
                                             <div class="container">
@@ -75,25 +75,26 @@ if(document.querySelector("header")){
                                         </li>
                                     </ul>
                                 </li>
+                                <li><a class="menu-item" href="index.html">Home</a></li>
                                 <li><a class="menu-item" href="services.html">Services</a>
                                     <ul>
-                                        <li><a class="menu-item" href="service-single.html">Air Duct Cleaning</a></li>
-                                        <li><a class="menu-item" href="service-single.html">Air Vent Cleaning</a></li>
-                                        <li><a class="menu-item" href="service-single.html">Dryer Vent Cleaning</a></li>
-                                        <li><a class="menu-item" href="service-single.html">Duct Sanizitation Process</a></li>
-                                        <li><a class="menu-item" href="service-single.html">Furnance Cleaning</a></li>
-                                        <li><a class="menu-item" href="service-single.html">Register & Return Vents</a></li>
-                                        <li><a class="menu-item" href="service-single.html">Blower Motor Cleaning</a></li>
-                                        <li><a class="menu-item" href="service-single.html">Central Vacuum</a></li>
-                                        <li><a class="menu-item" href="service-single.html">Deep+Brushing Cleaning</a></li>
-                                        <li><a class="menu-item" href="service-single.html">Main Line Cleaning</a></li>
-                                        <li><a class="menu-item" href="service-single.html">Furnance Filter Cleaning & Replacement</a></li>
+                                        <li><a class="menu-item" href="#">Air Duct Cleaning</a></li>
+                                        <li><a class="menu-item" href="#">Air Vent Cleaning</a></li>
+                                        <li><a class="menu-item" href="#">Dryer Vent Cleaning</a></li>
+                                        <li><a class="menu-item" href="#">Duct Sanizitation Process</a></li>
+                                        <li><a class="menu-item" href="#">Furnance Cleaning</a></li>
+                                        <li><a class="menu-item" href="#">Register & Return Vents</a></li>
+                                        <li><a class="menu-item" href="#">Blower Motor Cleaning</a></li>
+                                        <li><a class="menu-item" href="#">Central Vacuum</a></li>
+                                        <li><a class="menu-item" href="#">Deep+Brushing Cleaning</a></li>
+                                        <li><a class="menu-item" href="#">Main Line Cleaning</a></li>
+                                        <li><a class="menu-item" href="#">Furnance Filter Cleaning & Replacement</a></li>
                                     </ul>
                                 </li>
-                                <li><a class="menu-item" href="how-it-works.html">How It Works</a></li>
-                                <li><a class="menu-item" href="about.html">About</a></li>
-                                <li><a class="menu-item" href="blog.html">FAQ</a></li>
-                                <li><a class="menu-item" href="contact.html">Contact Us</a></li>
+                                <li><a class="menu-item" href="#">How It Works</a></li>
+                                <li><a class="menu-item" href="#">About</a></li>
+                                <li><a class="menu-item" href="#">FAQ</a></li>
+                                <li><a class="menu-item" href="#">Contact Us</a></li>
                             </ul>
                         </div>
                         <div class="de-flex-col">
@@ -102,7 +103,7 @@ if(document.querySelector("header")){
                                     <span>Need Help?</span>
                                     <h5>+1 289 651 8411</h5>
                                 </a>    
-                                <a href="book-service.html" class="btn-main">Book Service Now</a>
+                                <a href="#" class="btn-main">Book Service Now</a>
                                 <span id="menu-btn"></span>
                             </div>
                         </div>
@@ -138,11 +139,11 @@ if(document.querySelector("footer")){
                                 <h5>Company</h5>
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="services.html">Our Services</a></li>
-                                    <li><a href="projects.html">Projects</a></li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -150,12 +151,12 @@ if(document.querySelector("footer")){
                             <div class="widget">
                                 <h5>Our Services</h5>
                                 <ul>
-                                    <li><a href="service-single.html">Air Duct Cleaning</a></li>
-                                    <li><a href="service-single.html">Air Vent Cleaning</a></li>
-                                    <li><a href="service-single.html">Dryer Vent Cleaning</a></li>
-                                    <li><a href="service-single.html">Duct Sanizitation Process</a></li>
-                                    <li><a href="service-single.html">Furnance Cleaning</a></li>
-                                    <li><a href="service-single.html">Register & Return Vents</a></li>
+                                    <li><a href="#">Air Duct Cleaning</a></li>
+                                    <li><a href="#">Air Vent Cleaning</a></li>
+                                    <li><a href="#">Dryer Vent Cleaning</a></li>
+                                    <li><a href="#">Duct Sanizitation Process</a></li>
+                                    <li><a href="#">Furnance Cleaning</a></li>
+                                    <li><a href="#">Register & Return Vents</a></li>
                                 </ul>
                             </div>
                         </div>
