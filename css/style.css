@@ -191,6 +191,7 @@ body {
   padding: 0;
   line-height: 1.8em;
   word-spacing: 0px;
+  height: auto !important;
 }
 
 body.dark-scheme {
@@ -212,6 +213,107 @@ a:hover {
   color: var(--body-font-color-dark);
   text-decoration: none;
   outline: none;
+}
+
+.floatingAction.active {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  translate: 0 0;
+}
+
+.floatingAction.up {
+  translate: 0 -3.0em;
+}
+
+body:has(.blogSection .tableContent) .floatingAction {
+  @media only screen and (max-width: 768px) {
+      translate: 0 -3.0em;
+  }
+}
+
+body:has(.blogSection .tableContent .collapse.show) .floatingAction {
+  @media only screen and (max-width: 768px) {
+      scale: 0;
+      opacity: 0;
+      pointer-events: none;
+  }
+}
+
+.floatingAction {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  translate: 0 5.0em;
+  background-image: linear-gradient(45deg, var(--primary-color), var(--primary-color));
+  color: #fff !important;
+  z-index: 1212;
+  animation: floatingAction 0.5s ease-in-out forwards;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  outline: 2px solid transparent;
+}
+
+/* .floatingAction .innerFloating {
+  animation: floatingActionInnerRotate 3s ease infinite reverse !important;
+} */
+
+.floatingAction:active {
+  scale: 0.9;
+  animation: floatingActionRotate 0.2s linear infinite !important;
+}
+
+.floatingAction:hover {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 7px;
+}
+
+body:has(.modalSection.active) .floatingAction,
+body:has(.modalSection.active) .whatsappChat {
+  translate: 0 5.0em;
+  pointer-events: none;
+}
+
+
+@keyframes floatingAction {
+  from {
+      transform: translateX(100px) scale(0.5);
+  }
+
+  to {
+      transform: translateX(0px) scale(1.0);
+  }
+}
+
+@keyframes floatingActionRotate {
+  from {
+      rotate: 0deg;
+  }
+
+  to {
+      rotate: -360deg;
+  }
+}
+
+@keyframes floatingActionInnerRotate {
+  0% {
+      rotate: -180deg;
+  }
+
+  50% {
+      rotate: -360deg;
+  }
+
+  100% {
+      rotate: -180deg;
+  }
 }
 
 

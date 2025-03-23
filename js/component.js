@@ -1,7 +1,31 @@
-if(document.querySelector("header")){
-    document.querySelector("header").classList.add("header-light");
-    document.querySelector("header").classList.add("transparent");
-    document.querySelector("header").innerHTML = `
+if (document.querySelector(".floatingAction")) {
+  window.onscroll = () => {
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      document.querySelector(".floatingAction").classList.add("active");
+    } else {
+      document.querySelector(".floatingAction").classList.remove("active");
+    }
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+      document.querySelector(".floatingAction").classList.add("up");
+      document.querySelector(".whatsapp-btn").classList.add("up");
+    } else {
+      document.querySelector(".floatingAction").classList.remove("up");
+      document.querySelector(".whatsapp-btn").classList.remove("up");
+    }
+  };
+  document.querySelector(".floatingAction").onclick = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
+}
+
+if (document.querySelector("header")) {
+  document.querySelector("header").classList.add("header-light");
+  document.querySelector("header").classList.add("transparent");
+  document.querySelector("header").innerHTML = `
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -76,7 +100,7 @@ if(document.querySelector("header")){
                                     </ul>
                                 </li>
                                 <li><a class="menu-item" href="index.html">Home</a></li>
-                                <li><a class="menu-item" href="services.html">Services</a>
+                                <li><a class="menu-item" href="#">Services</a>
                                     <ul>
                                         <li><a class="menu-item" href="#">Air Duct Cleaning</a></li>
                                         <li><a class="menu-item" href="#">Air Vent Cleaning</a></li>
@@ -114,9 +138,9 @@ if(document.querySelector("header")){
     `;
 }
 
-if(document.querySelector("footer")){
-    document.querySelector("footer").classList.add("section-dark");
-    document.querySelector("footer").innerHTML = `
+if (document.querySelector("footer")) {
+  document.querySelector("footer").classList.add("section-dark");
+  document.querySelector("footer").innerHTML = `
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-4 col-sm-6">
