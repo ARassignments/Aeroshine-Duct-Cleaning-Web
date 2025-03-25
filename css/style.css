@@ -14806,3 +14806,11 @@ img {
     position: relative;
     z-index: 20;
 }
+
+/* Contact Map */
+.map {
+  width: 100%;
+  height: 80vh;
+  border: none;
+  border-radius: 20px;
+}

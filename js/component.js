@@ -24,7 +24,7 @@ if (document.querySelector(".floatingAction")) {
 
 if (document.querySelector("header")) {
   document.querySelector("header").classList.add("header-light");
-  document.querySelector("header").classList.add("transparent");
+  document.querySelector("header.main")?document.querySelector("header").classList.add("transparent"):"";
   document.querySelector("header").innerHTML = `
         <div class="container">
             <div class="row">
@@ -100,7 +100,7 @@ if (document.querySelector("header")) {
                                     </ul>
                                 </li>
                                 <li><a class="menu-item" href="index.html">Home</a></li>
-                                <li><a class="menu-item" href="#">Services</a>
+                                <li><a class="menu-item" href="services.html">Services</a>
                                     <ul>
                                         <li><a class="menu-item" href="#">Air Duct Cleaning</a></li>
                                         <li><a class="menu-item" href="#">Air Vent Cleaning</a></li>
@@ -115,10 +115,10 @@ if (document.querySelector("header")) {
                                         <li><a class="menu-item" href="#">Furnance Filter Cleaning & Replacement</a></li>
                                     </ul>
                                 </li>
-                                <li><a class="menu-item" href="#">How It Works</a></li>
-                                <li><a class="menu-item" href="#">About</a></li>
-                                <li><a class="menu-item" href="#">FAQ</a></li>
-                                <li><a class="menu-item" href="#">Contact Us</a></li>
+                                <li><a class="menu-item" href="how-it-works.html">How It Works</a></li>
+                                <li><a class="menu-item" href="about.html">About</a></li>
+                                <li><a class="menu-item" href="faqs.html">FAQ</a></li>
+                                <li><a class="menu-item" href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                         <div class="de-flex-col">
@@ -127,7 +127,7 @@ if (document.querySelector("header")) {
                                     <span>Need Help?</span>
                                     <h5>+1 289 651 8411</h5>
                                 </a>    
-                                <a href="#" class="btn-main">Book Service Now</a>
+                                <a href="book-service.html" class="btn-main">Book Service Now</a>
                                 <span id="menu-btn"></span>
                             </div>
                         </div>
@@ -163,11 +163,11 @@ if (document.querySelector("footer")) {
                                 <h5>Company</h5>
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="#">Our Services</a></li>
-                                    <li><a href="#">How It Works</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">FAQs</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="services.html">Our Services</a></li>
+                                    <li><a href="how-it-works.html">How It Works</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="faqs.html">FAQs</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
