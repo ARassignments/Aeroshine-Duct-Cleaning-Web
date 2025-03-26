@@ -310,6 +310,7 @@
                 Sending...
             </div>`;
             var formData = new FormData(form);
+            formData.append("Sended_On", new Date().toISOString());
             fetch("https://script.google.com/macros/s/AKfycbwO0bUtl7ea0hrze9Y8bHY0gnLsQ_o2tcREXWZz-xbwgpjMWH4WV6y5XIYZNavJb5WB/exec", { method: "POST", body: formData })
             .then((response) => {
                 if (response.ok) {
