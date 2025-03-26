@@ -173,11 +173,18 @@
                                 <h1 class="fw-bolder text-dark">Send us a message</h1>
                                 <p>Get in touch with us today for a free estimate and breathe easier with our
                                     professional duct cleaning services!</p>
-                                <form name="contactForm" id="contact_form" method="post" action="">
+                                <div id="success_message" class='success rounded mb-4'>
+                                    Your message has been sent successfully. Refresh this page if you want to send
+                                    more messages.
+                                </div>
+                                <div id="error_message" class='error rounded mb-4'>
+                                    Sorry there was an error sending your form.
+                                </div>
+                                <form name="contactForm" id="contact_form">
                                     <div class="d-flex flex-wrap gap-3 col-md-12">
                                         <div class="input flex-grow-1">
-                                            <label for="name">First Name</label>
-                                            <input type="text" id="name" name="name" class="form-control" minlength="3"
+                                            <label for="fname">First Name</label>
+                                            <input type="text" id="fname" name="fname" class="form-control" minlength="3"
                                                 maxlength="20"
                                                 onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode == 32)"
                                                 required>
@@ -210,17 +217,8 @@
                                             minlength="20" maxlength="1000" required></textarea>
                                     </div>
 
-                                    <input type='submit' id='send_message' value='Send Message'
-                                        class="btn-main w-100 py-3">
-
-
-                                    <div id="success_message" class='success'>
-                                        Your message has been sent successfully. Refresh this page if you want to send
-                                        more messages.
-                                    </div>
-                                    <div id="error_message" class='error'>
-                                        Sorry there was an error sending your form.
-                                    </div>
+                                    <button type='submit' id='send_message'
+                                        class="btn-main w-100 py-3">Send Message</button>
                                 </form>
                             </div>
                         </div>
@@ -293,36 +291,61 @@
         <!-- footer close -->
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js"></script>
     <script>
-        document.getElementById("contact_form").addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            let formData = {
-                name: document.getElementById("name").value,
-                lname: document.getElementById("lname").value,
-                email: document.getElementById("email").value,
-                contact: document.getElementById("contact").value,
-                message: document.getElementById("message").value
-            };
-
-            fetch("https://script.google.com/macros/s/AKfycbxY0wUxLnwRZ_anRgvI_OqZ_UuN5Orf8KpG19nubeRJaZiXuLxhUadhUz_3yIMwur9j/exec", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData)
-            })
-                .then(response => response.text())
-                .then(data => {
-                    if (data === "Success") {
-                        document.getElementById("success_message").style.display = "block";
-                        document.getElementById("contact_form").reset();
-                    } else {
-                        document.getElementById("error_message").style.display = "block";
-                    }
-                })
-                .catch(() => {
-                    document.getElementById("error_message").style.display = "block";
-                });
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
         });
+        const form = document.forms["contact_form"];
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            document.querySelector("#send_message").disabled = true;
+            document.querySelector("#send_message").innerHTML = `
+            <div class="d-flex align-items-center justify-content-center">
+                <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                Sending...
+            </div>`;
+            var formData = new FormData(form);
+            fetch("https://script.google.com/macros/s/AKfycbwO0bUtl7ea0hrze9Y8bHY0gnLsQ_o2tcREXWZz-xbwgpjMWH4WV6y5XIYZNavJb5WB/exec", { method: "POST", body: formData })
+            .then((response) => {
+                if (response.ok) {
+                    document.getElementById("success_message").style.display = "block";
+                    document.getElementById("contact_form").reset();
+                    document.querySelector("#send_message").disabled = false;
+                    document.querySelector("#send_message").innerHTML = `Send Message`;
+                    Toast.fire({
+                        icon: "success",
+                        title: "Your Message has been sent successfully",
+                    });
+                } else {
+                    document.getElementById("error_message").style.display = "block";
+                    document.querySelector("#send_message").disabled = false;
+                    document.querySelector("#send_message").innerHTML = `Send Message`;
+                    Toast.fire({
+                        icon: "error",
+                        title: "Something went wrong. Please try again.",
+                    });
+                }
+            })
+            .catch((error) => {
+                document.getElementById("error_message").style.display = "block";
+                document.querySelector("#send_message").disabled = false;
+                document.querySelector("#send_message").innerHTML = `Send Message`;
+                Toast.fire({
+                    icon: "error",
+                    title: "Something went wrong. Please try again.",
+                });
+            });
+        });
+
     </script>
 
     <script src="js/script.whatsapp.js"></script>
