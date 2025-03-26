@@ -228,15 +228,15 @@ a:hover {
 
 body:has(.blogSection .tableContent) .floatingAction {
   @media only screen and (max-width: 768px) {
-      translate: 0 -3.0em;
+    translate: 0 -3.0em;
   }
 }
 
 body:has(.blogSection .tableContent .collapse.show) .floatingAction {
   @media only screen and (max-width: 768px) {
-      scale: 0;
-      opacity: 0;
-      pointer-events: none;
+    scale: 0;
+    opacity: 0;
+    pointer-events: none;
   }
 }
 
@@ -284,35 +284,35 @@ body:has(.modalSection.active) .whatsappChat {
 
 @keyframes floatingAction {
   from {
-      transform: translateX(100px) scale(0.5);
+    transform: translateX(100px) scale(0.5);
   }
 
   to {
-      transform: translateX(0px) scale(1.0);
+    transform: translateX(0px) scale(1.0);
   }
 }
 
 @keyframes floatingActionRotate {
   from {
-      rotate: 0deg;
+    rotate: 0deg;
   }
 
   to {
-      rotate: -360deg;
+    rotate: -360deg;
   }
 }
 
 @keyframes floatingActionInnerRotate {
   0% {
-      rotate: -180deg;
+    rotate: -180deg;
   }
 
   50% {
-      rotate: -360deg;
+    rotate: -360deg;
   }
 
   100% {
-      rotate: -180deg;
+    rotate: -180deg;
   }
 }
 
@@ -14716,95 +14716,95 @@ img {
 /* FAQs Section */
 .faqSection .accordion .accordion-button:focus,
 .faqSection .accordion .accordion-button:active {
-    box-shadow: none;
-    /* background-color: #F1F7FF !important; */
-    background-color: #f1f7ff00 !important;
+  box-shadow: none;
+  /* background-color: #F1F7FF !important; */
+  background-color: #f1f7ff00 !important;
 }
 
 .faqSection .accordion .accordion-item {
-    background-color: #ffffff00 !important;
+  background-color: #ffffff00 !important;
 }
 
 .faqSection .accordion .accordion-button {
-    /* background-color: #F1F7FF !important; */
-    background-color: #f1f7ff00 !important;
-    /* font-weight: bold; */
-    color: #35404e;
-    font-family: 'outfit';
-    font-size: 1.2rem;
-    /* border-bottom: 1px solid #dddddd; */
+  /* background-color: #F1F7FF !important; */
+  background-color: #f1f7ff00 !important;
+  /* font-weight: bold; */
+  color: #35404e;
+  font-family: 'outfit';
+  font-size: 1.2rem;
+  /* border-bottom: 1px solid #dddddd; */
 }
 
 .faqSection .accordion .accordion-button span {
-    position: relative;
-    z-index: 12;
+  position: relative;
+  z-index: 12;
 }
 
 .faqSection .accordion .accordion-button.collapsed {
-    background-color: #ffffff00 !important;
+  background-color: #ffffff00 !important;
 }
 
 .faqSection .accordion .accordion-collapse {
-    /* background-color: #F1F7FF !important; */
-    border-color: #e0e0e000;
+  /* background-color: #F1F7FF !important; */
+  border-color: #e0e0e000;
 }
 
 .faqSection .accordion .accordion-collapse.collapsed {
-    background-color: #ffffff00 !important;
+  background-color: #ffffff00 !important;
 }
 
 .faqSection .accordion .accordion-button:not(.collapsed) {
-    color: #35404e;
-    /* background-color: #e7f1ff; */
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0);
+  color: #35404e;
+  /* background-color: #e7f1ff; */
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0);
 }
 
 .faqSection .accordion-button::after {
-    background-image: url(../images/faqs/plus-solid.svg);
-    transform: rotate(0deg);
-    width: 0.6rem;
-    height: 0.6rem;
-    background-size: 100%;
-    background-color: var(--primary-color);
-    border-radius: 100%;
-    box-shadow: 0 0 0 4px var(--primary-color);
-    margin-bottom: 0px !important;
-    padding: 0 !important;
-    padding-bottom: 1px !important;
-    transition: all 0.5s cubic-bezier(0.87, 0, 0.13, 1);
-    z-index: 1;
+  background-image: url(../images/faqs/plus-solid.svg);
+  transform: rotate(0deg);
+  width: 0.6rem;
+  height: 0.6rem;
+  background-size: 100%;
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  box-shadow: 0 0 0 4px var(--primary-color);
+  margin-bottom: 0px !important;
+  padding: 0 !important;
+  padding-bottom: 1px !important;
+  transition: all 0.5s cubic-bezier(0.87, 0, 0.13, 1);
+  z-index: 1;
 }
 
 .faqSection .accordion-button:not(.collapsed)::after {
-    background-image: url(../images/faqs/minus-solid.svg);
-    background-blend-mode: exclusion;
-    transform: rotate(0deg);
-    background-color: var(--secondary-color);
-    box-shadow: -30rem 20rem 0 60rem var(--secondary-color);
-    pointer-events: none;
+  background-image: url(../images/faqs/minus-solid.svg);
+  background-blend-mode: exclusion;
+  transform: rotate(0deg);
+  background-color: var(--secondary-color);
+  box-shadow: -30rem 20rem 0 60rem var(--secondary-color);
+  pointer-events: none;
 }
 
 .faqSection .accordion .accordion-item:has(.accordion-button) {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    border-radius: 10px;
-    border-color: #fff;
-    color: #35404e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 10px;
+  border-color: #fff;
+  color: #35404e;
 }
 
 .faqSection .accordion .accordion-item:has(.accordion-button.collapsed) {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-    border-radius: 0;
-    /* border-color: #e0e0e0; */
-    border-color: #e0e0e000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  border-radius: 0;
+  /* border-color: #e0e0e0; */
+  border-color: #e0e0e000;
 }
 
 .faqSection .accordion .accordion-body {
-    font-family: 'poppins';
-    font-size: 0.95rem;
-    padding-top: 0 !important;
-    position: relative;
-    z-index: 20;
+  font-family: 'poppins';
+  font-size: 0.95rem;
+  padding-top: 0 !important;
+  position: relative;
+  z-index: 20;
 }
 
 /* Contact Map */
@@ -14934,4 +14934,106 @@ img {
   height: 80vh;
   border: none;
   border-radius: 20px;
+}
+
+/* Location Section */
+.locationSection .location {
+  position: relative;
+  margin-top: 110px;
+}
+
+.locationSection .location .content {
+  position: absolute;
+  top: -110px;
+  left: 0;
+  width: 100%;
+  border-radius: 20px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.locationSection .location .content h5 {
+  font-size: 2.8rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-family: 'outfit';
+  transition: all 0.6s ease-in-out;
+}
+
+.locationSection .location .content p {
+  font-size: 1.3rem;
+  transition: all 0.6s ease-in-out;
+}
+
+.locationSection .location:hover .content {
+  background-color: rgba(var(--secondary-color-rgb), 0);
+  backdrop-filter: blur(0px);
+}
+
+@media (min-width: 768px) {
+  .locationSection .location {
+    position: relative;
+    margin-top: 0px;
+  }
+
+  .locationSection .location .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(var(--secondary-color-rgb), 0.8);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+  }
+
+  .locationSection .row:has(.location) {
+    flex-wrap: nowrap;
+  }
+
+  .locationSection .col-md-3:has(.location) {
+    flex: 1;
+    width: auto;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .locationSection .col-md-3:has(.location:hover) {
+    flex: 5.0;
+  }
+
+  .locationSection .row:hover .location .content h5,
+  .locationSection .row:hover .location .content p {
+    opacity: 0;
+  }
+
+  .locationSection .col-md-3::after {
+    content: attr(data-location);
+    opacity: 0;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--heading-font-color);
+    font-size: 2.8rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'outfit';
+    transition: all 0.6s ease-in-out;
+  }
+
+  .locationSection .col-md-3:has(.location:hover)::after {
+    opacity: 1;
+  }
+
 }
