@@ -130,20 +130,22 @@ if (document.querySelector("footer")) {
                 <div class="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
                     <div class="widget">
                         <div class="fw-bold text-white"><i class="icofont-wall-clock me-2 id-color-2"></i>We're Open</div>
-                        Monday - Saturday <br> 09:00 AM  - 18:00 PM
+                        Monday - Saturday | 09:00 AM  - 18:00 PM
  
                         <div class="spacer-20"></div>
 
                         <div class="fw-bold text-white"><i class="icofont-location-pin me-2 id-color-2"></i>Office Location</div>
-                        105 Ontario St, Vancouver, BC V5X 3E8, Canada, <br>
-                        419 Ludlow St, Saskatoon, SK S7S 1P3, Canada <br>
-                        4143 114 Ave SE, Calgary, AB T2Z 0H3, Canada
+                        578 Chechalk Lane, Toronto, ON, Canada, <br>
+                        105 Ontario St, Vancouver, BC V5X 3E8, Canada, <br>
+                        419 Ludlow St, Saskatoon, SK S7S 1P3, Canada, <br>
+                        4143 114 Ave SE, Calgary, AB T2Z 0H3, Canada
 
 
                         <div class="spacer-20"></div>
 
                         <div class="fw-bold text-white"><i class="icofont-envelope me-2 id-color-2"></i>Send a Message</div>
-                        info@aeroshineduct.com
+                        info@aeroshineduct.com <br>
+                        +1 437 529-4945 | +1 587 355 8896
                     </div>
                 </div>
             </div>
