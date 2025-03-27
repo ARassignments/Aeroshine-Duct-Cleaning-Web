@@ -49,7 +49,6 @@ if (document.querySelector("header")) {
                                         
                                     </ul>
                                 </li>
-                                <li><a class="menu-item" href="how-it-works.html">How It Works</a></li>
                                 <li><a class="menu-item" href="about.html">About</a></li>
                                 <li><a class="menu-item" href="faqs.html">FAQ</a></li>
                                 <li><a class="menu-item" href="contact.html">Contact Us</a></li>
@@ -98,7 +97,6 @@ if (document.querySelector("footer")) {
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="services.html">Our Services</a></li>
-                                    <li><a href="how-it-works.html">How It Works</a></li>
                                     <li><a href="about.html">About Us</a></li>
                                     <li><a href="faqs.html">FAQs</a></li>
                                     <li><a href="contact.html">Contact</a></li>
@@ -114,7 +112,6 @@ if (document.querySelector("footer")) {
                                     <li><a href="#">Dryer Vent Cleaning</a></li>
                                     <li><a href="#">Duct Sanizitation Process</a></li>
                                     <li><a href="#">Furnance Cleaning</a></li>
-                                    <li><a href="#">Register & Return Vents</a></li>
                                 </ul>
                             </div>
                         </div>
