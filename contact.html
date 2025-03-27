@@ -310,7 +310,16 @@
                 Sending...
             </div>`;
             var formData = new FormData(form);
-            formData.append("Sended_On", new Date().toISOString());
+            const formattedDate = new Intl.DateTimeFormat('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: true
+            }).format(new Date());
+            formData.append("Sended_On", formattedDate);
             fetch("https://script.google.com/macros/s/AKfycbwO0bUtl7ea0hrze9Y8bHY0gnLsQ_o2tcREXWZz-xbwgpjMWH4WV6y5XIYZNavJb5WB/exec", { method: "POST", body: formData })
             .then((response) => {
                 if (response.ok) {
