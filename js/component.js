@@ -112,12 +112,7 @@ if (document.querySelector("footer")) {
                         <div class="col-lg-8 col-sm-6">
                             <div class="widget">
                                 <h5>Our Services</h5>
-                                <ul>
-                                    <li><a href="#">Air Duct Cleaning</a></li>
-                                    <li><a href="#">Air Vent Cleaning</a></li>
-                                    <li><a href="#">Dryer Vent Cleaning</a></li>
-                                    <li><a href="#">Duct Sanizitation Process</a></li>
-                                    <li><a href="#">Furnance Cleaning</a></li>
+                                <ul class="servicesDropdown">
                                 </ul>
                             </div>
                         </div>
@@ -164,6 +159,15 @@ if (document.querySelector("footer")) {
             </div>
         </div>
     `;
+  for (let i = 0; i < services.length; i++) {
+    if (i < 5) {
+      document.querySelector(
+        "footer .servicesDropdown"
+      ).innerHTML += `<li><a href="service-single.html?id=${i + 1}">${
+        services[i]
+      }</a></li>`;
+    }
+  }
 }
 
 if (document.querySelector("#services #serviceContainer")) {
@@ -181,7 +185,9 @@ if (document.querySelector("#services #serviceContainer")) {
                         <div class="absolute z-2 start-0 w-100 abs-middle fs-36 text-white text-center">
                             <span class="btn-main hover-op-1">Read More</span>
                         </div>
-                        <img src="images/services/${service_list[i].sImage[0]}" class="img-fluid hover-scale-1-2 serviceImage" alt=""
+                        <img src="images/services/${
+                          service_list[i].sImage[0]
+                        }" class="img-fluid hover-scale-1-2 serviceImage" alt=""
                             loading="lazy">
                         <div
                             class="hover-op-0 abs p-3 px-4 bottom-0 text-center text-light w-100 overlay-black-1 bg-blur">
@@ -197,17 +203,21 @@ if (document.querySelector("#services #serviceContainer")) {
 }
 
 if (document.querySelector("#servicesAll #serviceContainer")) {
-    document.querySelector("#servicesAll #serviceContainer").innerHTML = "";
-    for (let i = 0; i < service_list.length; i++) {
-        document.querySelector("#servicesAll #serviceContainer").innerHTML += `
+  document.querySelector("#servicesAll #serviceContainer").innerHTML = "";
+  for (let i = 0; i < service_list.length; i++) {
+    document.querySelector("#servicesAll #serviceContainer").innerHTML += `
         <div class="col-lg-4 col-sm-6">
             <div class="relative mb-3 p-3 h-100 rounded-1 shadow-soft">
-                <a href="service-single.html?id=${i + 1}" class="d-block hover mb-3">
+                <a href="service-single.html?id=${
+                  i + 1
+                }" class="d-block hover mb-3">
                     <div class="relative overflow-hidden rounded-1 shadow-soft">
                         <div class="absolute z-2 start-0 w-100 abs-middle fs-36 text-white text-center">
                             <span class="btn-main hover-op-1">Read More</span>
                         </div>
-                        <img src="images/services/${service_list[i].sImage[0]}" class="img-fluid hover-scale-1-2 serviceImage" alt="">
+                        <img src="images/services/${
+                          service_list[i].sImage[0]
+                        }" class="img-fluid hover-scale-1-2 serviceImage" alt="">
                     </div>
                 </a>
                 <h4>${service_list[i].sName}</h4>
@@ -215,6 +225,5 @@ if (document.querySelector("#servicesAll #serviceContainer")) {
             </div>
         </div>
         `;
-    }
   }
-
+}
