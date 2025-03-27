@@ -24,7 +24,9 @@ if (document.querySelector(".floatingAction")) {
 
 if (document.querySelector("header")) {
   document.querySelector("header").classList.add("header-light");
-  document.querySelector("header.main")?document.querySelector("header").classList.add("transparent"):"";
+  document.querySelector("header.main")
+    ? document.querySelector("header").classList.add("transparent")
+    : "";
   document.querySelector("header").innerHTML = `
         <div class="container">
             <div class="row">
@@ -69,9 +71,13 @@ if (document.querySelector("header")) {
             </div>
         </div>
     `;
-    for (let i = 0; i < services.length; i++) {
-        document.querySelector("header .servicesDropdown").innerHTML += `<li><a class="menu-item" href="service-single.html?id=${i+1}">${services[i]}</a></li>`
-    }
+  for (let i = 0; i < services.length; i++) {
+    document.querySelector(
+      "header .servicesDropdown"
+    ).innerHTML += `<li><a class="menu-item" href="service-single.html?id=${
+      i + 1
+    }">${services[i]}</a></li>`;
+  }
 }
 
 if (document.querySelector("footer")) {
@@ -159,3 +165,56 @@ if (document.querySelector("footer")) {
         </div>
     `;
 }
+
+if (document.querySelector("#services #serviceContainer")) {
+  let itemCount = document
+    .querySelector("#services #serviceContainer")
+    .getAttribute("data-itemCount");
+  document.querySelector("#services #serviceContainer").innerHTML = "";
+  for (let i = 0; i < service_list.length; i++) {
+    if (i < itemCount) {
+      document.querySelector("#services #serviceContainer").innerHTML += `
+        <div class="col-lg-4 col-sm-6">
+            <div class="relative">
+                <a href="service-single.html?id=${i + 1}" class="d-block hover">
+                    <div class="relative overflow-hidden rounded-1 shadow-soft">
+                        <div class="absolute z-2 start-0 w-100 abs-middle fs-36 text-white text-center">
+                            <span class="btn-main hover-op-1">Read More</span>
+                        </div>
+                        <img src="images/services/${service_list[i].sImage[0]}" class="img-fluid hover-scale-1-2 serviceImage" alt=""
+                            loading="lazy">
+                        <div
+                            class="hover-op-0 abs p-3 px-4 bottom-0 text-center text-light w-100 overlay-black-1 bg-blur">
+                            <h4>${service_list[i].sName}</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        `;
+    }
+  }
+}
+
+if (document.querySelector("#servicesAll #serviceContainer")) {
+    document.querySelector("#servicesAll #serviceContainer").innerHTML = "";
+    for (let i = 0; i < service_list.length; i++) {
+        document.querySelector("#servicesAll #serviceContainer").innerHTML += `
+        <div class="col-lg-4 col-sm-6">
+            <div class="relative mb-3 p-3 h-100 rounded-1 shadow-soft">
+                <a href="service-single.html?id=${i + 1}" class="d-block hover mb-3">
+                    <div class="relative overflow-hidden rounded-1 shadow-soft">
+                        <div class="absolute z-2 start-0 w-100 abs-middle fs-36 text-white text-center">
+                            <span class="btn-main hover-op-1">Read More</span>
+                        </div>
+                        <img src="images/services/${service_list[i].sImage[0]}" class="img-fluid hover-scale-1-2 serviceImage" alt="">
+                    </div>
+                </a>
+                <h4>${service_list[i].sName}</h4>
+                <p class="no-bottom">${service_list[i].sShortDesc}</p>
+            </div>
+        </div>
+        `;
+    }
+  }
+
