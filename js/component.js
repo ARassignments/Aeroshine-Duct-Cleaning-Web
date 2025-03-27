@@ -45,18 +45,8 @@ if (document.querySelector("header")) {
                             <ul id="mainmenu">
                                 <li><a class="menu-item" href="index.html">Home</a></li>
                                 <li><a class="menu-item" href="services.html">Services</a>
-                                    <ul>
-                                        <li><a class="menu-item" href="#">Air Duct Cleaning</a></li>
-                                        <li><a class="menu-item" href="#">Air Vent Cleaning</a></li>
-                                        <li><a class="menu-item" href="#">Dryer Vent Cleaning</a></li>
-                                        <li><a class="menu-item" href="#">Duct Sanizitation Process</a></li>
-                                        <li><a class="menu-item" href="#">Furnance Cleaning</a></li>
-                                        <li><a class="menu-item" href="#">Register & Return Vents</a></li>
-                                        <li><a class="menu-item" href="#">Blower Motor Cleaning</a></li>
-                                        <li><a class="menu-item" href="#">Central Vacuum</a></li>
-                                        <li><a class="menu-item" href="#">Deep+Brushing Cleaning</a></li>
-                                        <li><a class="menu-item" href="#">Main Line Cleaning</a></li>
-                                        <li><a class="menu-item" href="#">Furnance Filter Cleaning & Replacement</a></li>
+                                    <ul class="servicesDropdown">
+                                        
                                     </ul>
                                 </li>
                                 <li><a class="menu-item" href="how-it-works.html">How It Works</a></li>
@@ -80,6 +70,9 @@ if (document.querySelector("header")) {
             </div>
         </div>
     `;
+    for (let i = 0; i < services.length; i++) {
+        document.querySelector("header .servicesDropdown").innerHTML += `<li><a class="menu-item" href="service-single.html?id=${i+1}">${services[i]}</a></li>`
+    }
 }
 
 if (document.querySelector("footer")) {
