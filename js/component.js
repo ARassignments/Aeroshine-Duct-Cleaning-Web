@@ -135,8 +135,8 @@ if (document.querySelector("footer")) {
                         <div class="spacer-20"></div>
 
                         <div class="fw-bold text-white"><i class="icofont-envelope me-2 id-color-2"></i>Send a Message</div>
-                        <a href="#"> info@aeroshineduct.com </a> <br>
-                        <a href="#"> +1 437 529-4945 </a> | <a href="#"> +1 587 355 8896 </a>
+                        <a href="mailto:info@aeroshineduct.com"> info@aeroshineduct.com </a> <br>
+                        <a href="tel:14375294945"> +1 437 529-4945 </a> | <a href="tel:15873558896"> +1 587 355 8896 </a>
                     </div>
                 </div>
             </div>
