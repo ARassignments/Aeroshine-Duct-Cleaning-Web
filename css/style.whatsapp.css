@@ -16,7 +16,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 1212;
+	z-index: 2000;
 	border-radius: 100%;
 	overflow: hidden;
 	box-shadow: 0 5px 15px rgb(0, 0, 0, 0.1);
@@ -90,7 +90,7 @@ body:has(.blogSection .tableContent .collapse.show) .whatsapp-btn{
 	border-radius: 10px;
 	display: block;
 	pointer-events: none;
-	z-index: 1000;
+	z-index: 2000;
 	box-shadow: 0 1px 6px rgb(0, 0, 0, 0.06), 0 2px 32px rgb(0, 0, 0, 0.16);
 	transition: all 0.3s ease;
 }
