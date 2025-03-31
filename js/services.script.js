@@ -95,7 +95,7 @@ let service_list = [
   },
   {
     sName: services[4],
-    sImage: ["5.webp"],
+    sImage: ["5.webp","5-2.jpg","5-3.jpg","5-4.jpg","5-5.jpg"],
     sShortDesc: `Furnace cleaning is essential for maintaining a safe and efficient heating system. The process involves removing dust.`,
     sLongDesc: `We specialize in comprehensive furnace cleaning services designed to optimize your HVAC system's performance. Our expert cleaning reduces blower noise, improves burner efficiency, and prevents duct system blowback, ensuring smoother operation. By removing dust and debris buildup, our services enhance indoor air quality and minimize potential system malfunctions. Regular furnace cleaning extends equipment lifespan and promotes energy savings by maintaining peak efficiency. Trust our professional services to ensure a comfortable and healthy home environment year-round.`,
     sList: [
@@ -115,7 +115,7 @@ let service_list = [
   },
   {
     sName: services[5],
-    sImage: ["6.webp"],
+    sImage: ["6.webp","6-2.jpg","6-3.jpg"],
     sShortDesc: `Register and return vents are crucial for maintaining efficient airflow in your HVAC system.`,
     sLongDesc: `Register and return vents play a crucial role in your HVAC system by distributing heated or cooled air throughout your home. Regular maintenance of these vents is essential to optimize airflow, ensuring consistent indoor comfort and improving overall HVAC performance. By keeping vents free from dust and debris, maintenance helps enhance energy efficiency and reduces the strain on your HVAC system. This proactive approach not only promotes a more comfortable living environment but also extends the lifespan of your HVAC equipment. Schedule regular maintenance of register and return vents to maximize their effectiveness and maintain a healthier indoor atmosphere.`,
     sList: [
@@ -151,7 +151,7 @@ let service_list = [
   },
   {
     sName: services[7],
-    sImage: ["8.webp"],
+    sImage: ["8.webp","8-2.jpg","8-3.jpg","8-4.jpg","8-5.jpg"],
     sShortDesc: `Regular maintenance of your central vacuum system is vital to uphold its suction effectiveness and capacity for removing dirt.`,
     sLongDesc: `Regular maintenance of your central vacuum system is vital to uphold its suction effectiveness and capacity for removing dirt and allergens, ensuring continued convenience and improved indoor air quality. Unlike conventional vacuums, central systems provide enhanced cleaning power and reduce airborne particles, making them a superior choice for maintaining a healthier home environment. Consistent upkeep not only extends the system's lifespan but also optimizes its performance, offering long-term benefits in cleanliness and comfort throughout your living space.`,
     sList: [
@@ -205,7 +205,7 @@ let service_list = [
   },
   {
     sName: services[10],
-    sImage: ["11.webp"],
+    sImage: ["11.webp","11-2.jpg","11-3.jpg","11-4.jpg","11-5.jpg"],
     sShortDesc: `Furnace filter cleaning and replacement are vital for maintaining indoor air quality and ensuring efficient.`,
     sLongDesc: `Furnace filter cleaning and replacement are vital for maintaining indoor air quality and ensuring efficient operation of your HVAC system. The filter traps dust, allergens, and debris, preventing them from circulating in your home and improving overall air cleanliness. Regularly replacing the filter is essential to maintain optimal performance and extend the lifespan of your HVAC equipment. This proactive maintenance not only enhances indoor comfort but also reduces energy consumption by allowing the system to operate more efficiently. Schedule regular checks and replacements of your furnace filter to promote a healthier indoor environment and maximize the longevity of your HVAC system.`,
     sList: [
