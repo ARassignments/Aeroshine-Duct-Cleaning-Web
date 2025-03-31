@@ -115,7 +115,7 @@ let service_list = [
   },
   {
     sName: services[5],
-    sImage: ["6.webp","6-2.jpg","6-3.jpg"],
+    sImage: ["6.webp","6-2.jpg","6-3.jpg","6-4.jpg","6-5.jpg"],
     sShortDesc: `Register and return vents are crucial for maintaining efficient airflow in your HVAC system.`,
     sLongDesc: `Register and return vents play a crucial role in your HVAC system by distributing heated or cooled air throughout your home. Regular maintenance of these vents is essential to optimize airflow, ensuring consistent indoor comfort and improving overall HVAC performance. By keeping vents free from dust and debris, maintenance helps enhance energy efficiency and reduces the strain on your HVAC system. This proactive approach not only promotes a more comfortable living environment but also extends the lifespan of your HVAC equipment. Schedule regular maintenance of register and return vents to maximize their effectiveness and maintain a healthier indoor atmosphere.`,
     sList: [
