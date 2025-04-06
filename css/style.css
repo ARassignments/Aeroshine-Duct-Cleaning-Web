@@ -14728,9 +14728,9 @@ img {
 .faqSection .accordion .accordion-button {
   /* background-color: #F1F7FF !important; */
   background-color: #f1f7ff00 !important;
-  /* font-weight: bold; */
+  font-weight: bold;
   color: #35404e;
-  font-family: 'outfit';
+  /* font-family: 'outfit'; */
   font-size: 1.2rem;
   /* border-bottom: 1px solid #dddddd; */
 }
@@ -14800,7 +14800,7 @@ img {
 }
 
 .faqSection .accordion .accordion-body {
-  font-family: 'poppins';
+  /* font-family: 'poppins'; */
   font-size: 0.95rem;
   padding-top: 0 !important;
   position: relative;
@@ -14835,7 +14835,7 @@ img {
 }
 
 .contactUsContainer .card .card-body .input label {
-  font-family: 'outfit';
+  /* font-family: 'outfit'; */
   text-transform: capitalize;
   color: #333333;
 }
@@ -14904,7 +14904,8 @@ img {
 }
 
 .contactUsContainer .social h5 {
-  font-family: 'outfit';
+  /* font-family: 'outfit'; */
+  font-weight: 900;
 }
 
 .contactUsContainer .social .links {
@@ -14960,7 +14961,7 @@ img {
   font-size: 2.8rem;
   font-weight: bolder;
   text-transform: uppercase;
-  font-family: 'outfit';
+  /* font-family: 'outfit'; */
   transition: all 0.6s ease-in-out;
 }
 
@@ -15028,7 +15029,7 @@ img {
     font-size: 2.8rem;
     font-weight: bolder;
     text-transform: uppercase;
-    font-family: 'outfit';
+    /* font-family: 'outfit'; */
     transition: all 0.6s ease-in-out;
   }
 
@@ -15042,5 +15043,20 @@ img {
 .serviceImage{
   width: 100%;
   height: 270px;
+  object-fit: cover;
+}
+
+.innerServiceImage{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.innerServiceImageThumb{
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+.innerServiceImageThumbSmall{
+  height: 150px;
   object-fit: cover;
 }

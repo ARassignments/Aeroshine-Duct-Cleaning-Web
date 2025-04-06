@@ -36,9 +36,9 @@ if (document.querySelector("header")) {
                             <!-- logo begin -->
                             <div id="logo">
                                 <a href="index.html">
-                                    <img class="logo-main" src="images/logo.png" height="90px" alt="" >
-                                    <img class="logo-scroll" src="images/logo.png" height="90px" alt="" >
-                                    <img class="logo-mobile" src="images/logo.png" height="70px" alt="" >
+                                    <img class="logo-main" src="images/logo.png" height="90px" alt="" loading="lazy" draggable="false">
+                                    <img class="logo-scroll" src="images/logo.png" height="90px" alt="" loading="lazy" draggable="false">
+                                    <img class="logo-mobile" src="images/logo.png" height="70px" alt="" loading="lazy" draggable="false">
                                 </a>
                             </div>
                             <!-- logo close -->
@@ -86,7 +86,7 @@ if (document.querySelector("footer")) {
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-4 col-sm-6">
-                    <img src="images/logo-dark.png" class="w-100p" width="120px" alt="" >
+                    <img src="images/logo-dark.png" class="w-100p" width="120px" alt="" loading="lazy" draggable="false">
                     <div class="spacer-20"></div>
                     <p>We are a team of passionate cleaning experts who take pride in delivering the highest standard of service. We’ve perfected our cleaning methods to ensure every job is done right.</p>
 
@@ -147,7 +147,7 @@ if (document.querySelector("footer")) {
                     <div class="col-md-12">
                         <div class="de-flex">
                             <div class="de-flex-col">
-                              &copy Copyright 2025 - Aeroshine Duct Cleaning (Designed By <a href="https://www.smisofts.com/">&nbsp SMI SOFTS </a>)
+                              &copy Copyright 2025 - Aeroshine Duct Cleaning (Designed By <a href="https://www.smisofts.com/" target="_blank">&nbsp SMI SOFTS </a>)
                             </div>
                             <ul class="menu-simple">
                                 <li><a href="#">Terms &amp; Conditions</a></li>
@@ -188,7 +188,7 @@ if (document.querySelector("#services #serviceContainer")) {
                         <img src="images/services/${
                           service_list[i].sImage[0]
                         }" class="img-fluid hover-scale-1-2 serviceImage" alt=""
-                            loading="lazy">
+                            loading="lazy" draggable="false">
                         <div
                             class="hover-op-0 abs p-3 px-4 bottom-0 text-center text-light w-100 overlay-black-1 bg-blur">
                             <h4>${service_list[i].sName}</h4>
@@ -217,7 +217,7 @@ if (document.querySelector("#servicesAll #serviceContainer")) {
                         </div>
                         <img src="images/services/${
                           service_list[i].sImage[0]
-                        }" class="img-fluid hover-scale-1-2 serviceImage" alt="">
+                        }" class="img-fluid hover-scale-1-2 serviceImage" alt="" draggable="false" loading="lazy">
                     </div>
                 </a>
                 <h4>${service_list[i].sName}</h4>

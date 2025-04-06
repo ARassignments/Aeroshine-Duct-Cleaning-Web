@@ -15,7 +15,7 @@ let services = [
 let service_list = [
   {
     sName: services[0],
-    sImage: ["1.webp"],
+    sImage: ["1.webp","1-2.webp","1-3.webp","1-4.webp","1-5.webp"],
     sShortDesc: `Air duct cleaning in Toronto is cleaning various heating and cooling components of forced air systems.`,
     sLongDesc: `Air duct cleaning involves the removal of dust, debris, and contaminants from the components of your HVAC system that distribute heated or cooled air throughout your home throughout the year. These ducts serve as pathways through which the air from your HVAC unit circulates, affecting the quality of air indoors. Regular cleaning of air ducts is essential to maintain optimal airflow, improve energy efficiency, and ensure healthier indoor air quality by reducing the buildup of allergens and pollutants. This maintenance helps in extending the lifespan of your HVAC system and promoting a more comfortable living environment.`,
     sList: [
@@ -35,7 +35,7 @@ let service_list = [
   },
   {
     sName: services[1],
-    sImage: ["2.webp"],
+    sImage: ["2.webp","2-2.webp","2-3.webp","2-4.webp","2-5.webp"],
     sShortDesc: `Air vent cleaning involves removing dust particles and debris from air vents and filters. Clogged vents.`,
     sLongDesc: `Air vents are integral to the efficient distribution of heated or cooled air throughout your home, ensuring consistent comfort in every room. Regular maintenance of air vents is essential as it prevents blockages from dust and debris, optimizing airflow and enhancing energy efficiency. This upkeep also contributes to better indoor air quality by reducing the circulation of allergens and pollutants, promoting a healthier living environment. Properly maintained air vents prolong the lifespan of your HVAC system, ensuring reliable performance and cost savings over time.`,
     sList: [
@@ -55,7 +55,7 @@ let service_list = [
   },
   {
     sName: services[2],
-    sImage: ["3.webp"],
+    sImage: ["3.webp","3-2.webp","3-3.webp","3-4.webp","3-5.webp"],
     sShortDesc: `Dryer vent cleaning involves removing dust particles and debris from both the dryer vent and filters.`,
     sLongDesc: `Dryer vent cleaning is a critical maintenance task that helps prevent house fires by eliminating lint buildup, which can be highly flammable. It also improves the efficiency of your dryer, reducing energy consumption and saving you money on utility bills. Regular cleaning ensures that your dryer operates safely and effectively, prolonging its lifespan and preventing costly repairs. Don't wait—schedule a dryer vent cleaning service today to protect your home and increase energy efficiency.`,
     sList: [
@@ -75,7 +75,7 @@ let service_list = [
   },
   {
     sName: services[3],
-    sImage: ["4.webp"],
+    sImage: ["4.webp","4-2.webp","4-3.webp","4-4.webp","4-5.webp"],
     sShortDesc: `Duct sanitization and furnace cleaning are crucial for maintaining indoor air quality and HVAC system efficiency.`,
     sLongDesc: `Duct Sanitization is essential for reducing the transmission of germs and spores through the air, crucial for maintaining a healthy indoor environment. Mold poses a significant concern in ducts, where its growth can thrive in secluded areas, potentially impacting air quality. Regular sanitization of ducts helps mitigate mold buildup, ensuring cleaner air circulation and minimizing health risks associated with indoor pollutants. Effective sanitization practices not only improve air quality but also contribute to the overall comfort and well-being of occupants by reducing allergens and irritants in the environment.`,
     sList: [
@@ -95,7 +95,7 @@ let service_list = [
   },
   {
     sName: services[4],
-    sImage: ["5.webp"],
+    sImage: ["5.webp","5-2.webp","5-3.webp","5-4.webp","5-5.webp"],
     sShortDesc: `Furnace cleaning is essential for maintaining a safe and efficient heating system. The process involves removing dust.`,
     sLongDesc: `We specialize in comprehensive furnace cleaning services designed to optimize your HVAC system's performance. Our expert cleaning reduces blower noise, improves burner efficiency, and prevents duct system blowback, ensuring smoother operation. By removing dust and debris buildup, our services enhance indoor air quality and minimize potential system malfunctions. Regular furnace cleaning extends equipment lifespan and promotes energy savings by maintaining peak efficiency. Trust our professional services to ensure a comfortable and healthy home environment year-round.`,
     sList: [
@@ -115,7 +115,7 @@ let service_list = [
   },
   {
     sName: services[5],
-    sImage: ["6.webp"],
+    sImage: ["6.webp","6-2.webp","6-3.webp","6-4.webp","6-5.webp"],
     sShortDesc: `Register and return vents are crucial for maintaining efficient airflow in your HVAC system.`,
     sLongDesc: `Register and return vents play a crucial role in your HVAC system by distributing heated or cooled air throughout your home. Regular maintenance of these vents is essential to optimize airflow, ensuring consistent indoor comfort and improving overall HVAC performance. By keeping vents free from dust and debris, maintenance helps enhance energy efficiency and reduces the strain on your HVAC system. This proactive approach not only promotes a more comfortable living environment but also extends the lifespan of your HVAC equipment. Schedule regular maintenance of register and return vents to maximize their effectiveness and maintain a healthier indoor atmosphere.`,
     sList: [
@@ -133,7 +133,7 @@ let service_list = [
   },
   {
     sName: services[6],
-    sImage: ["7.webp"],
+    sImage: ["7.webp","7-2.webp","7-3.webp","7-4.webp","7-5.webp"],
     sShortDesc: `Blower motor cleaning is essential for maintaining the efficiency and performance of your HVAC system by removing accumulated.`,
     sLongDesc: `Blower motor cleaning is essential for maintaining the efficiency and performance of your HVAC system by removing accumulated dirt and debris from the blower motor. This cleaning process ensures optimal airflow throughout your home, improving comfort and energy efficiency. Regular maintenance of the blower motor helps prevent potential breakdowns and extends the lifespan of your HVAC equipment. By reducing strain on the system, cleaning also contributes to lower energy costs and promotes a healthier indoor environment. Schedule routine blower motor cleaning to keep your HVAC system running smoothly and effectively year-round.`,
     sList: [
@@ -151,7 +151,7 @@ let service_list = [
   },
   {
     sName: services[7],
-    sImage: ["8.webp"],
+    sImage: ["8.webp","8-2.webp","8-3.webp","8-4.webp","8-5.webp"],
     sShortDesc: `Regular maintenance of your central vacuum system is vital to uphold its suction effectiveness and capacity for removing dirt.`,
     sLongDesc: `Regular maintenance of your central vacuum system is vital to uphold its suction effectiveness and capacity for removing dirt and allergens, ensuring continued convenience and improved indoor air quality. Unlike conventional vacuums, central systems provide enhanced cleaning power and reduce airborne particles, making them a superior choice for maintaining a healthier home environment. Consistent upkeep not only extends the system's lifespan but also optimizes its performance, offering long-term benefits in cleanliness and comfort throughout your living space.`,
     sList: [
@@ -169,7 +169,7 @@ let service_list = [
   },
   {
     sName: services[8],
-    sImage: ["9.webp"],
+    sImage: ["9.webp","9-2.webp","9-3.webp","9-4.webp","9-5.webp"],
     sShortDesc: `Deep brushing cleaning involves using specialized tools to meticulously remove dust, debris, and allergens from ductwork.`,
     sLongDesc: `Register and return vents play a crucial role in your HVAC system by distributing heated or cooled air throughout your home. Regular maintenance of these vents is essential to optimize airflow, ensuring consistent indoor comfort and improving overall HVAC performance. By keeping vents free from dust and debris, maintenance helps enhance energy efficiency and reduces the strain on your HVAC system. This proactive approach not only promotes a more comfortable living environment but also extends the lifespan of your HVAC equipment. Schedule regular maintenance of register and return vents to maximize their effectiveness and maintain a healthier indoor atmosphere.`,
     sList: [
@@ -187,7 +187,7 @@ let service_list = [
   },
   {
     sName: services[9],
-    sImage: ["10.webp"],
+    sImage: ["10.webp","10-2.webp","10-3.webp","10-4.webp","10-5.webp"],
     sShortDesc: `Main line cleaning is essential for maintaining the integrity of your plumbing system and preventing blockages that can.`,
     sLongDesc: `Main line cleaning is essential for maintaining the integrity of your plumbing system and preventing blockages that can lead to backups and potential water damage in your home. By clearing out debris and buildup from the main sewer line, regular maintenance ensures smooth wastewater flow and reduces the risk of costly plumbing emergencies. This proactive approach not only enhances the efficiency of your plumbing but also contributes to a healthier and more hygienic living environment. Schedule regular main line cleaning to avoid disruptions and protect your property from the consequences of plumbing issues.`,
     sList: [
@@ -205,7 +205,7 @@ let service_list = [
   },
   {
     sName: services[10],
-    sImage: ["11.webp"],
+    sImage: ["11.webp","11-2.webp","11-3.webp","11-4.webp","11-5.webp"],
     sShortDesc: `Furnace filter cleaning and replacement are vital for maintaining indoor air quality and ensuring efficient.`,
     sLongDesc: `Furnace filter cleaning and replacement are vital for maintaining indoor air quality and ensuring efficient operation of your HVAC system. The filter traps dust, allergens, and debris, preventing them from circulating in your home and improving overall air cleanliness. Regularly replacing the filter is essential to maintain optimal performance and extend the lifespan of your HVAC equipment. This proactive maintenance not only enhances indoor comfort but also reduces energy consumption by allowing the system to operate more efficiently. Schedule regular checks and replacements of your furnace filter to promote a healthier indoor environment and maximize the longevity of your HVAC system.`,
     sList: [
