@@ -1,5 +1,5 @@
 const swiper = new Swiper('.swiper', {
-
+// Designed by SMI SOFTS (https://www.smisofts.com/)
   autoplay: {
      delay: 3000,
      disableOnInteraction: false
@@ -28,3 +28,4 @@ const swiper = new Swiper('.swiper', {
   },
 
 });
+// Designed by SMI SOFTS (https://www.smisofts.com/)

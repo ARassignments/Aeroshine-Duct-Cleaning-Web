@@ -1,3 +1,4 @@
+// Designed by SMI SOFTS (https://www.smisofts.com/)
 if (document.querySelector(".floatingAction")) {
   window.onscroll = () => {
     if (
@@ -79,7 +80,7 @@ if (document.querySelector("header")) {
     }">${services[i]}</a></li>`;
   }
 }
-
+// Designed by SMI SOFTS 
 if (document.querySelector("footer")) {
   document.querySelector("footer").classList.add("section-dark");
   document.querySelector("footer").innerHTML = `
@@ -106,6 +107,7 @@ if (document.querySelector("footer")) {
                                     <li><a href="about.html">About Us</a></li>
                                     <li><a href="faqs.html">FAQs</a></li>
                                     <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="contact.html">Book Service</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -147,7 +149,7 @@ if (document.querySelector("footer")) {
                     <div class="col-md-12">
                         <div class="de-flex">
                             <div class="de-flex-col">
-                              &copy Copyright 2025 - Aeroshine Duct Cleaning (Designed By <a href="https://www.smisofts.com/" target="_blank">&nbsp SMI SOFTS </a>)
+                              &copy Copyright 2025 - Aeroshine Duct Cleaning
                             </div>
                             <ul class="menu-simple">
                                 <li><a href="#">Terms &amp; Conditions</a></li>
@@ -160,7 +162,7 @@ if (document.querySelector("footer")) {
         </div>
     `;
   for (let i = 0; i < services.length; i++) {
-    if (i < 5) {
+    if (i < 9) {
       document.querySelector(
         "footer .servicesDropdown"
       ).innerHTML += `<li><a href="service-single.html?id=${i + 1}">${
@@ -169,7 +171,7 @@ if (document.querySelector("footer")) {
     }
   }
 }
-
+// Designed by SMI SOFTS
 if (document.querySelector("#services #serviceContainer")) {
   let itemCount = document
     .querySelector("#services #serviceContainer")
@@ -227,3 +229,4 @@ if (document.querySelector("#servicesAll #serviceContainer")) {
         `;
   }
 }
+// Designed by SMI SOFTS (https://www.smisofts.com/)

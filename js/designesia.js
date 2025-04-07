@@ -1,6 +1,8 @@
  /* --------------------------------------------------
   * © Copyright 2025 - Uclean by Designesia
   * --------------------------------------------------*/
+
+ // Designed by SMI SOFTS (https://www.smisofts.com/)
 (function($) {
 	'use strict';
 
@@ -89,6 +91,7 @@
              preloader: false,
              fixedContentPos: false
          });
+         // Designed by SMI SOFTS 
          // Initialize popup as usual
          $('.image-popup').magnificPopup({
              type: 'image',
@@ -140,6 +143,7 @@
                  duration: 300 // don't foget to change the duration also in CSS
              }
          });
+         // Designed by SMI SOFTS
          $('.image-popup-gallery').magnificPopup({
              type: 'image',
              closeOnContentClick: false,
@@ -252,7 +256,7 @@
                 }
             }
          });
-
+         // Designed by SMI SOFTS
         jQuery(".owl-single-dots").owlCarousel({
             loop:true,
             items: 1,
@@ -367,7 +371,7 @@
          $('.d-carousel .d-arrow-left').on("click", function() {
              owl_2.trigger('prev.owl.carousel');
          });
-
+         // Designed by SMI SOFTS
         jQuery(".rtl #testimonial-carousel").owlCarousel({
             center: false,
             loop:true,
@@ -501,7 +505,7 @@
 				}
 			}
          });
-
+         // Designed by SMI SOFTS
          jQuery("#owl-logo-4").owlCarousel({
             center: false,
             items:4,
@@ -591,7 +595,7 @@
          $(".prev").on("click", function() {
              $(this).parent().parent().find('.blog-slide').trigger('owl.prev');
          });
-
+         // Designed by SMI SOFTS
          jQuery('.owl-custom-nav').each(function() {
              var owl = $('.owl-custom-nav').next();
              var ow = parseInt(owl.css("height"), 10);
@@ -653,7 +657,7 @@
              return false;
          });
      }
-
+     // Designed by SMI SOFTS
      function masonry() {
          var $container = jQuery('.masonry');
          $container.isotope({
@@ -728,7 +732,7 @@
              $('.show-on-scroll').removeClass('hide');
              t = 1;
          }
-
+         // Designed by SMI SOFTS
          if (scrollTop < scrollTrigger && t === 1) {
              $('#back-to-top').addClass('hide');
              $('.show-on-scroll').addClass('hide');
@@ -868,6 +872,7 @@
              jQuery(this).parent().parent().find('.de_tab_content > div:eq(' + indexer + ')').fadeIn(); //uses whatever index the link has to open the corresponding box 
              jQuery(this).find('.v-border').fadeTo(150, 1);
          });
+         // Designed by SMI SOFTS 
          // request quote function
          var rq_step = 1;
          jQuery('#request_form .btn-right').on("click", function() {
@@ -977,7 +982,7 @@
          });
          // mainmenu arrow click
          jQuery("#mainmenu > li > span").on("click", function() {
-             
+            // Designed by SMI SOFTS 
              var iteration = $(this).data('iteration') || 1;
              switch (iteration) {
                  case 1:
@@ -1063,7 +1068,7 @@
              $(this).data('iteration', iteration);
          });
 
-
+         // Designed by SMI SOFTS
          jQuery("#de-click-menu-notification").on("click", function() {
              var iteration = $(this).data('iteration') || 1;
              
@@ -1120,7 +1125,7 @@
              instances.push(new moveItItem($(this)));
          });
      }
-
+     // Designed by SMI SOFTS
      function moveItItemNow() {
          var scrollTop = $window.scrollTop();
          instances.forEach(function(inst) {
@@ -1194,7 +1199,7 @@
 
          scrolling();
 
-
+         // Designed by SMI SOFTS 
          jQuery(".activity-filter > li").on("click", function() {
              var iteration = $(this).data('iteration') || 1;
              switch (iteration) {
@@ -1258,7 +1263,7 @@
      if(preloader==="off"){
             jQuery("#de-loader").hide();
      }
-
+     // Designed by SMI SOFTS
      function f_rtl(){
          jQuery("#selector #demo-rtl").on("click", function() {
             var iteration = $(this).data('iteration') || 1;
@@ -1353,7 +1358,7 @@
              jQuery(this).find('.value').text(jQuery(this).find('.progress-bar').attr('data-value'));
          });
      }
-
+     // Designed by SMI SOFTS
      function de_countdown() {
          $('.de_countdown').each(function() {
              var y = $(this).data('year');
@@ -1431,7 +1436,7 @@
             }
          });
     }
-
+    // Designed by SMI SOFTS
     function de_share(){
         var url = window.location.href;
         $('.fa-twitter').on("click", function() { window.open('https://twitter.com/share?url='+url,'_blank'); });
@@ -1877,3 +1882,4 @@
     });
     
  })(jQuery);
+ // Designed by SMI SOFTS (https://www.smisofts.com/)

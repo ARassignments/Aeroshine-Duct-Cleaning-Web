@@ -42,6 +42,9 @@ Table of content:
 
 /* ================================================== */
 
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap');
 
@@ -61,6 +64,7 @@ Table of content:
 @import url("../fonts/et-line-font/style.css");
 @import url("../fonts/icofont/icofont.min.css");
 
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
 * {
   --body-font: "Open Sans", Helvetica, Arial, sans-serif;
   --body-font-size: 16px;
@@ -133,7 +137,7 @@ Table of content:
   --container-max-width: 1240px;
 }
 
-
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .bg-dark, .bg-dark-1 {
   background-color: var(--bg-dark-1) !important
 }
@@ -239,7 +243,7 @@ body:has(.blogSection .tableContent .collapse.show) .floatingAction {
     pointer-events: none;
   }
 }
-
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .floatingAction {
   position: fixed;
   bottom: 20px;
@@ -316,6 +320,7 @@ body:has(.modalSection.active) .whatsappChat {
   }
 }
 
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
 
 /* ================================================== */
 
@@ -689,6 +694,8 @@ header .header-col.mid .social-icons {
   color: #fff;
 }
 
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
+
 #subheader .small-border-deco {
   display: block;
   margin: 0 auto;
@@ -799,7 +806,7 @@ header .header-col.mid .social-icons {
 #mainmenu>li {
   counter-increment: my-awesome-counter;
 }
-
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
 #mainmenu li a.new:before {
   content: "NEW";
   font-size: 12px;
@@ -7004,7 +7011,7 @@ footer .widget {
 .footer-light .widget .tiny-border {
   background: rgba(0, 0, 0, .1);
 }
-
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .widget_tags li {
   text-shadow: none;
   display: inline-block;
@@ -8554,7 +8561,7 @@ footer .tiny-border span {
 .ms-60 {
   margin-left: 60%;
 }
-
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .ms-70 {
   margin-left: 70%;
 }
@@ -9645,7 +9652,7 @@ footer .tiny-border span {
 .de-timeline-s2 .d-item.no-border {
   border: none;
 }
-
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .de-timeline-s2 .d-item .d-icon {
   font-weight: bold;
   border-radius: 30px;
@@ -10096,7 +10103,7 @@ body.dark-scheme::-webkit-scrollbar-track,
   min-width: 0%;
   z-index: 1000;
 }
-
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .scrollbar-v {
   background: var(--primary-color);
   position: fixed;
@@ -12455,7 +12462,7 @@ img.anim-up-down {
   font-weight: 600;
   color: var(--primary-color);
 }
-
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .images-carousel-group img {
   height: 350px;
   width: auto;
@@ -13067,7 +13074,7 @@ img {
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0);
 }
-
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .line-preloader .p-line:nth-child(1) {
   position: absolute;
   width: 25px;
@@ -13697,7 +13704,7 @@ img {
     z-index: 1000;
     cursor: pointer;
   }
-
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
   header.header-mobile #mainmenu>li>ul>li>span.active {
     background: url(../images/ui/arrow-up.png) center no-repeat;
   }
@@ -14029,7 +14036,7 @@ img {
   .mt-sm-100 {
     margin-top: 10px;
   }
-
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
   /* margin top (px) */
   .mb-sm-10 {
     margin-bottom: 10px;
@@ -14355,7 +14362,7 @@ img {
   .mt-xs-10 {
     margin-top: 10px;
   }
-
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
   .mt-xs-20 {
     margin-top: 20px;
   }
@@ -14686,7 +14693,7 @@ img {
   padding: 0.2rem 0;
   position: relative;
 }
-
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .plansItem ul li:last-child {
   border-bottom: 1px solid white;
   padding-bottom: 2.0rem;
@@ -14870,7 +14877,7 @@ img {
   align-items: center;
   gap: 1.0em;
 }
-
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .contactUsContainer .company .item span {
   width: 45px;
   height: 45px;
@@ -15060,3 +15067,5 @@ img {
   height: 150px;
   object-fit: cover;
 }
+
+/* Designed by SMI SOFTS (https://www.smisofts.com/) */

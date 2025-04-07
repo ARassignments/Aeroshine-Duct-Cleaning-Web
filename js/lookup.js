@@ -6,7 +6,7 @@ var lookup = {
    'Phone' : ['Apple', 'Asus', 'Samsung'],
    'Gaming Console' : ['Playstation','Nintendo'],
 };
-
+// Designed by SMI SOFTS (https://www.smisofts.com/)
 var phone_lookup = {
    'Apple' : ['iPhone 4','iPhone 4s','iPhone 5','iPhone 5c','iPhone 5s','iPhone 6','iPhone 6 Plus','iPhone 6s','iPhone 6s Plus','iPhone SE','iPhone 7','iPhone 7 Plus','iPhone 8','iPhone 8 Plus','iPhone X','iPhone XR','iPhone XS','iPhone XS Max','iPhone 11','iPhone 11 Pro','iPhone 11 Pro Max','iPhone SE (2nd generation)','iPhone 12','iPhone 12 mini','iPhone 12 Pro','iPhone 12 Pro Max','iPhone 13','iPhone 13 mini','iPhone 13 Pro','iPhone 13 Pro Max','iPhone SE (3rd generation)','iPhone 14','iPhone 14 Plus','iPhone 14 Pro','iPhone 14 Pro Max','iPhone 15','iPhone 15 Plus','iPhone 15 Pro','iPhone 15 Pro Max'],
    'Asus'  : ['ASUS ZenFone','ASUS ZenFone 2','ASUS ZenFone 2 Laser','ASUS ZenFone 3','ASUS ZenFone 3 Deluxe','ASUS ZenFone 3 Max','ASUS ZenFone 3 Zoom','ASUS ZenFone 4','ASUS ZenFone 4 Pro','ASUS ZenFone 4 Selfie','ASUS ZenFone 4 Max','ASUS ZenFone 5','ASUS ZenFone 5Z','ASUS ZenFone 5Q','ASUS ZenFone 6','ASUS ZenFone 6Z','ASUS ZenFone 7','ASUS ZenFone 7 Pro','ASUS ZenFone 8','ASUS ZenFone 8 Flip','ASUS ZenFone Max','ASUS ZenFone Max Pro M1','ASUS ZenFone Max Pro M2','ASUS ZenFone Max M1','ASUS ZenFone Max M2','ASUS ZenFone Max Plus','ASUS ZenFone Max Shot','ASUS ROG Phone','ASUS ROG Phone II','ASUS ROG Phone 3','ASUS ROG Phone 5','ASUS ROG Phone 5s','ASUS ROG Phone 6','ASUS ROG Phone 6D','ASUS ROG Phone 7','ASUS ROG Phone 7 Ultimate'],
@@ -49,3 +49,4 @@ $('#brand').on('change', function() {
       $('#type').append("<option value='" + phone_lookup[selectValue][i] + "'>" + phone_lookup[selectValue][i] + "</option>");
    }
 });
+// Designed by SMI SOFTS (https://www.smisofts.com/)

@@ -21,7 +21,7 @@
 // velocityX:
 // velocityY: Average velocity over last few events.
 
-
+// Designed by SMI SOFTS (https://www.smisofts.com/)
 (function(fn) {
 	if (typeof define === 'function' && define.amd) {
         define([], fn);
@@ -597,3 +597,4 @@
 		add: add
 	};
 });
+// Designed by SMI SOFTS (https://www.smisofts.com/)

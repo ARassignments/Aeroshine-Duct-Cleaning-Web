@@ -7,7 +7,7 @@ $(function(){
         duplicated: true,
         startVisible: true
     });
-
+// Designed by SMI SOFTS (https://www.smisofts.com/)
     $('.wm-carousel').marquee({
         direction: 'left',
         duration: 20000,

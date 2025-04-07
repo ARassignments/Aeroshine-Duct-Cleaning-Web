@@ -1,5 +1,5 @@
 (function($){
-
+// Designed by SMI SOFTS (https://www.smisofts.com/)
   $.fn.twentytwenty = function(options) {
     var options = $.extend({
       default_offset_pct: 0.5,
@@ -150,3 +150,4 @@
   };
 
 })(jQuery);
+// Designed by SMI SOFTS (https://www.smisofts.com/)

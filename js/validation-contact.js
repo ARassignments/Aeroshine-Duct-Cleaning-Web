@@ -1,3 +1,4 @@
+// Designed by SMI SOFTS (https://www.smisofts.com/)
 $(document).ready(function(){
         $('#send_message').click(function(e){
             
@@ -64,3 +65,4 @@ $(document).ready(function(){
             }
         });    
     });
+    // Designed by SMI SOFTS (https://www.smisofts.com/)

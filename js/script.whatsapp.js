@@ -1,3 +1,4 @@
+// Designed by SMI SOFTS (https://www.smisofts.com/)
 if(document.querySelector(".whatsappChat")){
     document.querySelector(".whatsappChat").innerHTML=`
     <div class="whatsapp-btn hvr-buzz-out">
@@ -17,7 +18,7 @@ if(document.querySelector(".whatsappChat")){
             <div>Send via WhatsApp <i class="fa fa-chevron-right"></i></div>
         </div>
     </div>
-    `
+    ` 
     document.querySelector(".whatsapp-btn").onclick = function () {
         document.querySelector(".whatsapp-btn").classList.toggle("open")
         document.querySelector(".whatsapp-container").classList.toggle("open")
@@ -40,3 +41,4 @@ if(document.querySelector(".whatsappChat")){
         document.querySelector(".whatsapp-container").classList.remove("open");
     });
 }
+// Designed by SMI SOFTS (https://www.smisofts.com/)
