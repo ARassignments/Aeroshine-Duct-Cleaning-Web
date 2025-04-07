@@ -15060,3 +15060,8 @@ img {
   height: 150px;
   object-fit: cover;
 }
+
+/* Whatsapp */
+.whatsappChat{
+  display: none !important;
+}
