@@ -15069,3 +15069,8 @@ img {
 }
 
 /* Designed by SMI SOFTS (https://www.smisofts.com/) */
+
+/* Whatsapp */
+.whatsappChat{
+  display: none !important;
+}
