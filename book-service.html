@@ -265,7 +265,7 @@
                 hour12: true
             }).format(new Date());
             formData.append("Booked_On", formattedDate);
-            fetch("https://script.google.com/macros/s/AKfycbyL5R8jodAb7VY9HH1LQZ9N2KOntCb3iwqPh6wEPhyH7ZxoyiIMPfA3TZ1HYN9yaZCAQQ/exec", { method: "POST", body: formData })
+            fetch("https://script.google.com/macros/s/AKfycbw41WfADrWGMPjLj2zoys_iaXjVqJiJMJXs4TVdKIh8VYCB729vqhtQkYh3WBHGAVGyqw/exec", { method: "POST", body: formData })
                 .then((response) => {
                     if (response.ok) {
                         document.getElementById("booking_form").reset();
