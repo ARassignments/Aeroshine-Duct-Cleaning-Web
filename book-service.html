@@ -189,7 +189,7 @@
                                                 <div class="col-lg-4">
                                                     <h5>Phone</h5>
                                                     <input type="text" name="Contact" class="form-control"
-                                                        minlength="11" maxlength="15"
+                                                        minlength="10" maxlength="15"
                                                         onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
                                                         required>
                                                 </div>
@@ -265,7 +265,7 @@
                 hour12: true
             }).format(new Date());
             formData.append("Booked_On", formattedDate);
-            fetch("https://script.google.com/macros/s/AKfycbw41WfADrWGMPjLj2zoys_iaXjVqJiJMJXs4TVdKIh8VYCB729vqhtQkYh3WBHGAVGyqw/exec", { method: "POST", body: formData })
+            fetch("https://script.google.com/macros/s/AKfycbzzzJcZf9SchrOV9Ps0UacCXcs5-xhGdmLy_giSZVvjqSG2dclCe10sd4NFuqAXVt9opg/exec", { method: "POST", body: formData })
                 .then((response) => {
                     if (response.ok) {
                         document.getElementById("booking_form").reset();

@@ -325,7 +325,7 @@
                 hour12: true
             }).format(new Date());
             formData.append("Sended_On", formattedDate);
-            fetch("https://script.google.com/macros/s/AKfycbwmm713QQ6HGz7fiVrFxD7LEtlfxoJ_S1qzsA_x6HXjn6SrrM1rtkxYNwEd_5yZx4Q2/exec", { method: "POST", body: formData })
+            fetch("https://script.google.com/macros/s/AKfycbxVaFNz-HfDzZFrnDySVmqPTEEat6ruEPxNBMdAG590d7NqNSrzvuHy2a_WJmNkunBBCg/exec", { method: "POST", body: formData })
                 .then((response) => {
                     if (response.ok) {
                         document.getElementById("success_message").style.display = "block";
