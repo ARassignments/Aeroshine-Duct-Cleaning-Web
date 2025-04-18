@@ -147,7 +147,7 @@
                                                     <div id="date" class="relative input-group date"
                                                         data-date-format="mm-dd-yyyy">
                                                         <!-- <i class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-calendar"></i> -->
-                                                        <input class="form-control" name="Date" type="date" required>
+                                                        <input class="form-control" name="Date" type="date" id="dateInput" required>
                                                         <span class="input-group-addon"><i
                                                                 class="glyphicon glyphicon-calendar"></i></span>
                                                     </div>
@@ -250,6 +250,10 @@
     <!-- Designed by SMI SOFTS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js"></script>
     <script>
+        const today = new Date();
+        today.setDate(today.getDate() + 1); // Add 2 days
+        const minDate = today.toISOString().split('T')[0]; 
+        document.getElementById("dateInput").setAttribute('min', minDate);
         const Toast = Swal.mixin({
             toast: true,
             position: "top-end",
