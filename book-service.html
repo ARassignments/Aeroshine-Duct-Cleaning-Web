@@ -27,6 +27,22 @@
     <link rel="stylesheet" href="css/config.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '670868365536192');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=670868365536192&ev=PageView&noscript=1"/>
+    </noscript>
+
 </head>
 
 <body>
@@ -194,7 +210,7 @@
                                                         required>
                                                 </div>
                                                 <div class="col-lg-6">
-                                                    <h5>Adress</h5>
+                                                    <h5>Address</h5>
                                                     <input type="text" name="Address" class="form-control" minlength="5" maxlength="500" required>
                                                 </div>
                                                 <div class="col-lg-6">
@@ -265,9 +281,14 @@
                 hour12: true
             }).format(new Date());
             formData.append("Booked_On", formattedDate);
+            const params = new URLSearchParams(formData);
             fetch("https://script.google.com/macros/s/AKfycbzzzJcZf9SchrOV9Ps0UacCXcs5-xhGdmLy_giSZVvjqSG2dclCe10sd4NFuqAXVt9opg/exec", { method: "POST", body: formData })
                 .then((response) => {
                     if (response.ok) {
+                        fetch("https://script.google.com/macros/s/AKfycbzOdVzRmF6bXXNeAn4bNN3rDoNocjhKKKKiZntpc4x-6GNA-ljOWE29uuuuqSWaMAKV/exec", {  // Replace with your Google Apps Script Web App URL
+                            method: "POST",
+                            body: params,
+                        });
                         document.getElementById("booking_form").reset();
                         document.querySelector("#book_service").disabled = false;
                         document.querySelector("#book_service").innerHTML = `Book Service`;

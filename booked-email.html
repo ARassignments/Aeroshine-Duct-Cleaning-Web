@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="preload" href="css/config.css" as="style">
+    <link rel="stylesheet" href="css/config.css"> -->
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            text-decoration: none;
+            color: #707070;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .emailSection {
+            padding: 6.0rem 0;
+            background-color: #f7f7f7 !important;
+            border-radius: 30px;
+        }
+
+        .emailSection .logo {
+            height: 150px;
+            width: 150px;
+            display: block;
+            margin: auto;
+            margin-bottom: 2.0rem;
+        }
+
+        .emailSection .logo img {
+            height: inherit;
+        }
+
+        .emailSection .card {
+            border-radius: 20px;
+            overflow: hidden;
+            border: none;
+        }
+
+        .emailSection .card .header {
+            background-color: #48b1fb;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .emailSection .card .header h1 {
+            color: #fff;
+            font-size: 3.0rem;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+
+        .emailSection .card .content {
+            padding: 30px;
+            background-color: #fff !important;
+        }
+
+        .emailSection .card .content h5 {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0;
+            line-height: 1.6em;
+            margin-bottom: 10px;
+        }
+
+        .emailSection .card .content p {
+            margin-bottom: 20px;
+        }
+
+        .emailSection .card .content .details {
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 1.0rem;
+            background-color: #fafafa !important;
+            color: #707070;
+        }
+        .emailSection .card .content .details .row{
+            padding: 12px 20px;
+        }
+        .emailSection .card .content .details .row:hover{
+            background-color: #ededed;
+        }
+        .emailSection .card .content .details .title{
+            font-weight: bold;
+        }
+        .emailSection .card .content .details a{
+            color: #707070;
+            text-decoration: none;
+        }
+
+        .emailSection .card .content .thanks {
+            text-align: center;
+        }
+        .emailSection .card .footer {
+            text-align: center;
+            background-color: #f1f1f1;
+            font-family: var(--font-regular);
+            font-size: 0.9rem;
+            padding: 30px 30px;
+        }
+        .emailSection .card .footer a{
+            font-size: inherit;
+            color: #3582f6;
+        }
+        .container{
+            width: 100%;
+            padding-right: var(--bs-gutter-x, .75rem);
+            padding-left: var(--bs-gutter-x, .75rem);
+            margin-right: auto;
+            margin-left: auto;
+        }
+        @media (min-width: 768px) {
+            .container{
+                max-width: 700px;
+            }
+        }
+        .g-2 {
+            gap: 0.5rem;
+            flex-direction: column;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .justify-content-center {
+            justify-content: center !important;
+        }
+        .col-md-7 {
+            width: 100%;
+        }
+        .col-6 {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+        .col-12 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section class="emailSection">
+        <div class="container">
+            <a href="https://aeroshineduct.com" class="logo">
+                <img src="https://aeroshine.netlify.app/images/logo.png" loading="lazy" alt="">
+            </a>
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="card">
+                        <div class="header">
+                            <h1>Service Booking Confirmed</h1>
+                        </div>
+                        <div class="content">
+                            <h5>Hello Aeroshine's Admin,</h5>
+                            <p>A new service has been booked with the following details:</p>
+                            <div class="details">
+                                <div class="row">
+                                    <div class="col-6 title">Name</div>
+                                    <div class="col-6">${name}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 title">Email Address</div>
+                                    <div class="col-6"><a href="mailto:${email}">${email}</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 title">Contact No</div>
+                                    <div class="col-6"><a href="tel:${contact}">${contact}</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 title">City</div>
+                                    <div class="col-6">${city}</div>
+                                </div>
+                                <div class="row g-2">
+                                    <div class="col-12 title">Address</div>
+                                    <div class="col-12">${address}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 title">Service</div>
+                                    <div class="col-6">${service}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 title">Service Date</div>
+                                    <div class="col-6">${date}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 title">Service Time</div>
+                                    <div class="col-6">${time}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 title">Service Duration</div>
+                                    <div class="col-6">${duration}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 title">Service Booked On</div>
+                                    <div class="col-6">${bookedOn}</div>
+                                </div>
+                                <div class="row g-2">
+                                    <div class="col-12 title">Additional Message</div>
+                                    <div class="col-12">${message}</div>
+                                </div>
+                            </div>
+                            <p class="thanks">Thank you for using our service!<br> We will contact the customer shortly.</p>
+                        </div>
+                        <div class="footer">
+                            &copy; ${new Date().getFullYear()} <a href="https://aeroshineduct.com">Aeroshine Duct Cleaning</a>. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>

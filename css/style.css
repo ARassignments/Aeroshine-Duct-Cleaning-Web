@@ -64,6 +64,46 @@ Table of content:
 @import url("../fonts/et-line-font/style.css");
 @import url("../fonts/icofont/icofont.min.css");
 
+@font-face {
+  font-family: 'rightous';
+  src: url(../fonts/Righteous-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'poppinsSemiBold';
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'poppinsBold';
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'poppinsLight';
+  src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: 'poppinsThin';
+  src: url(../fonts/Poppins-Thin.ttf);
+}
+
+@font-face {
+  font-family: 'outfit';
+  src: url(../fonts/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'base';
+  src: url(../fonts/Base-Font.ttf);
+}
+
 /* Designed by SMI SOFTS (https://www.smisofts.com/) */
 * {
   --body-font: "Open Sans", Helvetica, Arial, sans-serif;
@@ -135,6 +175,13 @@ Table of content:
   --button-rounded: 30px;
   --border-color: #bbbbbb;
   --container-max-width: 1240px;
+
+  --font-regular: 'poppins';
+  --font-semi-bold: 'poppinsSemiBold';
+  --font-bold: 'poppinsBold';
+  --font-light: 'poppinsLight';
+  --font-thin: 'poppinsThin';
+  --font-base: 'base';
 }
 
 /* Designed by SMI SOFTS (https://www.smisofts.com/) */
@@ -243,6 +290,7 @@ body:has(.blogSection .tableContent .collapse.show) .floatingAction {
     pointer-events: none;
   }
 }
+
 /* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .floatingAction {
   position: fixed;
@@ -806,6 +854,7 @@ header .header-col.mid .social-icons {
 #mainmenu>li {
   counter-increment: my-awesome-counter;
 }
+
 /* Designed by SMI SOFTS (https://www.smisofts.com/) */
 #mainmenu li a.new:before {
   content: "NEW";
@@ -7011,6 +7060,7 @@ footer .widget {
 .footer-light .widget .tiny-border {
   background: rgba(0, 0, 0, .1);
 }
+
 /* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .widget_tags li {
   text-shadow: none;
@@ -8561,6 +8611,7 @@ footer .tiny-border span {
 .ms-60 {
   margin-left: 60%;
 }
+
 /* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .ms-70 {
   margin-left: 70%;
@@ -9652,6 +9703,7 @@ footer .tiny-border span {
 .de-timeline-s2 .d-item.no-border {
   border: none;
 }
+
 /* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .de-timeline-s2 .d-item .d-icon {
   font-weight: bold;
@@ -10103,6 +10155,7 @@ body.dark-scheme::-webkit-scrollbar-track,
   min-width: 0%;
   z-index: 1000;
 }
+
 /* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .scrollbar-v {
   background: var(--primary-color);
@@ -12462,6 +12515,7 @@ img.anim-up-down {
   font-weight: 600;
   color: var(--primary-color);
 }
+
 /* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .images-carousel-group img {
   height: 350px;
@@ -13074,6 +13128,7 @@ img {
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0);
 }
+
 /* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .line-preloader .p-line:nth-child(1) {
   position: absolute;
@@ -13704,7 +13759,8 @@ img {
     z-index: 1000;
     cursor: pointer;
   }
-/* Designed by SMI SOFTS (https://www.smisofts.com/) */
+
+  /* Designed by SMI SOFTS (https://www.smisofts.com/) */
   header.header-mobile #mainmenu>li>ul>li>span.active {
     background: url(../images/ui/arrow-up.png) center no-repeat;
   }
@@ -14036,7 +14092,8 @@ img {
   .mt-sm-100 {
     margin-top: 10px;
   }
-/* Designed by SMI SOFTS (https://www.smisofts.com/) */
+
+  /* Designed by SMI SOFTS (https://www.smisofts.com/) */
   /* margin top (px) */
   .mb-sm-10 {
     margin-bottom: 10px;
@@ -14362,7 +14419,8 @@ img {
   .mt-xs-10 {
     margin-top: 10px;
   }
-/* Designed by SMI SOFTS (https://www.smisofts.com/) */
+
+  /* Designed by SMI SOFTS (https://www.smisofts.com/) */
   .mt-xs-20 {
     margin-top: 20px;
   }
@@ -14693,6 +14751,7 @@ img {
   padding: 0.2rem 0;
   position: relative;
 }
+
 /* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .plansItem ul li:last-child {
   border-bottom: 1px solid white;
@@ -14877,6 +14936,7 @@ img {
   align-items: center;
   gap: 1.0em;
 }
+
 /* Designed by SMI SOFTS (https://www.smisofts.com/) */
 .contactUsContainer .company .item span {
   width: 45px;
@@ -15047,23 +15107,25 @@ img {
 }
 
 /* Service */
-.serviceImage{
+.serviceImage {
   width: 100%;
   height: 270px;
   object-fit: cover;
 }
 
-.innerServiceImage{
+.innerServiceImage {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
-.innerServiceImageThumb{
+
+.innerServiceImageThumb {
   height: 200px;
   object-fit: cover;
   object-position: top;
 }
-.innerServiceImageThumbSmall{
+
+.innerServiceImageThumbSmall {
   height: 150px;
   object-fit: cover;
 }
@@ -15071,6 +15133,85 @@ img {
 /* Designed by SMI SOFTS (https://www.smisofts.com/) */
 
 /* Whatsapp */
-.whatsappChat{
+.whatsappChat {
   display: none !important;
+}
+
+/* Email Section */
+.emailSection {
+  background-color: #f4f4f4;
+}
+
+.emailSection .logo {
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: auto;
+  margin-bottom: 2.0rem;
+}
+
+.emailSection .logo img {
+  height: inherit;
+}
+
+.emailSection .card {
+  border-radius: 20px;
+  overflow: hidden;
+  border: none;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.emailSection .card .header {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.emailSection .card .header h1 {
+  color: #fff;
+  font-size: 3.0rem;
+  margin-bottom: 0;
+}
+
+.emailSection .card .content {
+  padding: 30px;
+}
+
+.emailSection .card .content h5 {
+  color: var(--body-font-color);
+}
+
+.emailSection .card .content p {
+  font-family: var(--font-regular);
+}
+
+.emailSection .card .content .details {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 1.0rem;
+  background-color: #f8f9fa;
+  font-family: var(--font-regular);
+}
+.emailSection .card .content .details .row{
+  padding: 12px 20px;
+}
+.emailSection .card .content .details .row:hover{
+  background-color: #ededed;
+}
+.emailSection .card .content .details .title{
+  font-weight: bold;
+}
+.emailSection .card .content .details a{
+  color: #707070;
+}
+
+.emailSection .card .content .thanks {
+  text-align: center;
+}
+.emailSection .card .footer {
+  text-align: center;
+  background-color: #f5f5f5;
+  font-family: var(--font-regular);
+  font-size: 0.9rem;
+  padding: 30px 30px;
 }
