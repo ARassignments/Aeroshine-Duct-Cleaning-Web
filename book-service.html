@@ -287,39 +287,20 @@
             }).format(new Date());
             formData.append("Booked_On", formattedDate);
             const params = new URLSearchParams(formData);
-            fetch("https://script.google.com/macros/s/AKfycbzzzJcZf9SchrOV9Ps0UacCXcs5-xhGdmLy_giSZVvjqSG2dclCe10sd4NFuqAXVt9opg/exec", { method: "POST", body: formData })
+            fetch("https://script.google.com/macros/s/AKfycbzzzJcZf9SchrOV9Ps0UacCXcs5-xhGdmLy_giSZVvjqSG2dclCe10sd4NFuqAXVt9opg/exec", { method: "POST", mode: "no-cors", body: formData })
                 .then((response) => {
-                    if (response.ok) {
-                        // Email.send({
-                        //     Host : "smtp.hostinger.com",
-                        //     Username : "info@aeroshineduct.com",
-                        //     Password : "Info@aeroshine1#",
-                        //     To : 'info@aeroshineduct.com',
-                        //     From : "info@aeroshineduct.com",
-                        //     Subject : "Aeroshine New Service Booked",
-                        //     Body : "Booking details here..."
-                        // }).then(
-                        //     message => alert(message)
-                        // );
-                        fetch("https://script.google.com/macros/s/AKfycbxTrkNd_gIM6w687cY-O-nWSHSr2xfr_3bpoudZwX02cDJW1QuHexuRGsuqt6sdwPwd/exec", {  // Replace with your Google Apps Script Web App URL
-                            method: "POST",
-                            body: params,
-                        });
-                        document.getElementById("booking_form").reset();
-                        document.querySelector("#book_service").disabled = false;
-                        document.querySelector("#book_service").innerHTML = `Book Service`;
-                        Toast.fire({
-                            icon: "success",
-                            title: "Service has been booked successfully",
-                        });
-                    } else {
-                        document.querySelector("#book_service").disabled = false;
-                        document.querySelector("#book_service").innerHTML = `Book Service`;
-                        Toast.fire({
-                            icon: "error",
-                            title: "Something went wrong. Please try again.",
-                        });
-                    }
+                    fetch("https://script.google.com/macros/s/AKfycbxTrkNd_gIM6w687cY-O-nWSHSr2xfr_3bpoudZwX02cDJW1QuHexuRGsuqt6sdwPwd/exec", {  // Replace with your Google Apps Script Web App URL
+                        method: "POST",
+                        mode: "no-cors",
+                        body: params,
+                    });
+                    document.getElementById("booking_form").reset();
+                    document.querySelector("#book_service").disabled = false;
+                    document.querySelector("#book_service").innerHTML = `Book Service`;
+                    Toast.fire({
+                        icon: "success",
+                        title: "Service has been booked successfully",
+                    });
                 })
                 .catch((error) => {
                     document.querySelector("#book_service").disabled = false;
