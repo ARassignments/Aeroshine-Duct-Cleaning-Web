@@ -249,6 +249,7 @@
     </div>
     <!-- Designed by SMI SOFTS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         const today = new Date();
         today.setDate(today.getDate() + 1); // Add 2 days
@@ -289,6 +290,17 @@
             fetch("https://script.google.com/macros/s/AKfycbzzzJcZf9SchrOV9Ps0UacCXcs5-xhGdmLy_giSZVvjqSG2dclCe10sd4NFuqAXVt9opg/exec", { method: "POST", body: formData })
                 .then((response) => {
                     if (response.ok) {
+                        // Email.send({
+                        //     Host : "smtp.hostinger.com",
+                        //     Username : "info@aeroshineduct.com",
+                        //     Password : "Info@aeroshine1#",
+                        //     To : 'info@aeroshineduct.com',
+                        //     From : "info@aeroshineduct.com",
+                        //     Subject : "Aeroshine New Service Booked",
+                        //     Body : "Booking details here..."
+                        // }).then(
+                        //     message => alert(message)
+                        // );
                         fetch("https://script.google.com/macros/s/AKfycbxTrkNd_gIM6w687cY-O-nWSHSr2xfr_3bpoudZwX02cDJW1QuHexuRGsuqt6sdwPwd/exec", {  // Replace with your Google Apps Script Web App URL
                             method: "POST",
                             body: params,
