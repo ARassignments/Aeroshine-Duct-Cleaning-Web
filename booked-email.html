@@ -3,7 +3,7 @@
 <head>
     <!-- <link rel="preload" href="css/config.css" as="style">
     <link rel="stylesheet" href="css/config.css"> -->
-    <style>
+    <!-- <style>
         *{
             box-sizing: border-box;
             margin: 0;
@@ -138,7 +138,7 @@
             flex: 0 0 auto;
             width: 100%;
         }
-    </style>
+    </style> -->
 </head>
 <body>
     <section class="emailSection">
@@ -211,5 +211,80 @@
             </div>
         </div>
     </section>
+
+    <section style="padding: 6rem 0; background-color: #f7f7f7; border-radius: 30px; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; color: #707070;">
+        <div style="width: 100%; padding-right: .75rem; padding-left: .75rem; margin-right: auto; margin-left: auto; max-width: 700px;">
+            <a href="https://aeroshineduct.com" style="display: block; margin: auto; margin-bottom: 2rem; height: 150px; width: 150px;">
+                <img src="https://aeroshine.netlify.app/images/logo.png" loading="lazy" alt="" style="height: 100%; width: auto;">
+            </a>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="width: 100%;">
+                    <div style="border-radius: 20px; overflow: hidden; border: none;">
+                        <div style="background-color: #48b1fb; text-align: center; padding: 30px 20px;">
+                            <h1 style="color: #fff; font-size: 3rem; margin-bottom: 0; font-weight: bold;">Service Booking Confirmation</h1>
+                        </div>
+                        <div style="padding: 30px; background-color: #fff;">
+                            <h5 style="font-size: 16px; font-weight: 600; letter-spacing: 0; line-height: 1.6em; margin-bottom: 10px;">Hello Aeroshine's Admin,</h5>
+                            <p style="margin-bottom: 20px;">A new service has been booked with the following details:</p>
+                            <div style="border-radius: 20px; overflow: hidden; margin-bottom: 1rem; background-color: #fafafa; color: #707070;">
+                                
+                                <div style="padding: 12px 20px; display: flex; flex-wrap: wrap;">
+                                    <div style="flex: 0 0 auto; width: 50%; font-weight: bold;">Name</div>
+                                    <div style="flex: 0 0 auto; width: 50%;">${name}</div>
+                                </div>
+                                <div style="padding: 12px 20px; display: flex; flex-wrap: wrap;">
+                                    <div style="flex: 0 0 auto; width: 50%; font-weight: bold;">Email Address</div>
+                                    <div style="flex: 0 0 auto; width: 50%;"><a href="mailto:${email}" style="color: #707070; text-decoration: none;">${email}</a></div>
+                                </div>
+                                <div style="padding: 12px 20px; display: flex; flex-wrap: wrap;">
+                                    <div style="flex: 0 0 auto; width: 50%; font-weight: bold;">Contact No</div>
+                                    <div style="flex: 0 0 auto; width: 50%;"><a href="tel:${contact}" style="color: #707070; text-decoration: none;">${contact}</a></div>
+                                </div>
+                                <div style="padding: 12px 20px; display: flex; flex-wrap: wrap;">
+                                    <div style="flex: 0 0 auto; width: 50%; font-weight: bold;">City</div>
+                                    <div style="flex: 0 0 auto; width: 50%;">${city}</div>
+                                </div>
+                                <div style="padding: 12px 20px; display: flex; flex-wrap: wrap; flex-direction: column; gap: 0.5rem;">
+                                    <div style="flex: 0 0 auto; width: 100%; font-weight: bold;">Address</div>
+                                    <div style="flex: 0 0 auto; width: 100%;">${address}</div>
+                                </div>
+                                <div style="padding: 12px 20px; display: flex; flex-wrap: wrap;">
+                                    <div style="flex: 0 0 auto; width: 50%; font-weight: bold;">Service</div>
+                                    <div style="flex: 0 0 auto; width: 50%;">${service}</div>
+                                </div>
+                                <div style="padding: 12px 20px; display: flex; flex-wrap: wrap;">
+                                    <div style="flex: 0 0 auto; width: 50%; font-weight: bold;">Service Date</div>
+                                    <div style="flex: 0 0 auto; width: 50%;">${date}</div>
+                                </div>
+                                <div style="padding: 12px 20px; display: flex; flex-wrap: wrap;">
+                                    <div style="flex: 0 0 auto; width: 50%; font-weight: bold;">Service Time</div>
+                                    <div style="flex: 0 0 auto; width: 50%;">${time}</div>
+                                </div>
+                                <div style="padding: 12px 20px; display: flex; flex-wrap: wrap;">
+                                    <div style="flex: 0 0 auto; width: 50%; font-weight: bold;">Service Duration</div>
+                                    <div style="flex: 0 0 auto; width: 50%;">${duration}</div>
+                                </div>
+                                <div style="padding: 12px 20px; display: flex; flex-wrap: wrap;">
+                                    <div style="flex: 0 0 auto; width: 50%; font-weight: bold;">Service Booked On</div>
+                                    <div style="flex: 0 0 auto; width: 50%;">${bookedOn}</div>
+                                </div>
+                                <div style="padding: 12px 20px; display: flex; flex-wrap: wrap; flex-direction: column; gap: 0.5rem;">
+                                    <div style="flex: 0 0 auto; width: 100%; font-weight: bold;">Additional Message</div>
+                                    <div style="flex: 0 0 auto; width: 100%;">${message}</div>
+                                </div>
+                            </div>
+                            <p style="text-align: center; margin-bottom: 20px;">Thank you for using our service!<br>We will contact the customer shortly.</p>
+                        </div>
+                        <div style="text-align: center; background-color: #f1f1f1; font-size: 0.9rem; padding: 30px;">
+                            &copy; ${new Date().getFullYear()} 
+                            <a href="https://aeroshineduct.com" style="color: #3582f6; font-size: inherit;">Aeroshine Duct Cleaning</a>. 
+                            All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      
   </body>
 </html>
