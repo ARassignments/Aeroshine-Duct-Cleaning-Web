@@ -27,6 +27,22 @@
     <link rel="stylesheet" href="css/config.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '670868365536192');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=670868365536192&ev=PageView&noscript=1"/>
+    </noscript>
+
 </head>
 
 <body>
@@ -131,7 +147,7 @@
                                                     <div id="date" class="relative input-group date"
                                                         data-date-format="mm-dd-yyyy">
                                                         <!-- <i class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-calendar"></i> -->
-                                                        <input class="form-control" name="Date" type="date" required>
+                                                        <input class="form-control" name="Date" type="date" id="dateInput" required>
                                                         <span class="input-group-addon"><i
                                                                 class="glyphicon glyphicon-calendar"></i></span>
                                                     </div>
@@ -141,19 +157,19 @@
                                                     <h5>Time</h5>
                                                     <div class="relative">
                                                         <select name="Time" class="form-control" required>
-                                                            <option value="09:00">09:00 AM</option>
-                                                            <option value="10:00">10:00 AM</option>
-                                                            <option value="11:00">11:00 AM</option>
-                                                            <option value="12:00">12:00 PM</option>
-                                                            <option value="13:00">13:00 PM</option>
-                                                            <option value="14:00">14:00 PM</option>
-                                                            <option value="15:00">15:00 PM</option>
-                                                            <option value="16:00">16:00 PM</option>
-                                                            <option value="17:00">17:00 PM</option>
-                                                            <option value="18:00">18:00 PM</option>
+                                                            <option value="09:00 AM">09:00 AM</option>
+                                                            <option value="10:00 AM">10:00 AM</option>
+                                                            <option value="11:00 AM">11:00 AM</option>
+                                                            <option value="12:00 PM">12:00 PM</option>
+                                                            <option value="13:00 PM">13:00 PM</option>
+                                                            <option value="14:00 PM">14:00 PM</option>
+                                                            <option value="15:00 PM">15:00 PM</option>
+                                                            <option value="16:00 PM">16:00 PM</option>
+                                                            <option value="17:00 PM">17:00 PM</option>
+                                                            <option value="18:00 PM">18:00 PM</option>
                                                         </select>
                                                         <i
-                                                            class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-simple-down"></i>
+                                                            class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-simple-down" style="pointer-events: none;"></i>
                                                     </div>
                                                 </div>
                                                 <!-- Designed by SMI SOFTS -->
@@ -168,7 +184,7 @@
                                                             <option value="5 Hours">5 Hours</option>
                                                         </select>
                                                         <i
-                                                            class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-simple-down"></i>
+                                                            class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-simple-down" style="pointer-events: none;"></i>
                                                     </div>
                                                 </div>
 
@@ -189,13 +205,13 @@
                                                 <div class="col-lg-4">
                                                     <h5>Phone</h5>
                                                     <input type="text" name="Contact" class="form-control"
-                                                        minlength="11" maxlength="15"
+                                                        minlength="10" maxlength="15"
                                                         onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
                                                         required>
                                                 </div>
                                                 <div class="col-lg-6">
-                                                    <h5>Adress</h5>
-                                                    <input type="text" name="Address" class="form-control" minlength="10" maxlength="500" required>
+                                                    <h5>Address</h5>
+                                                    <input type="text" name="Address" class="form-control" minlength="5" maxlength="500" required>
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <h5>City</h5>
@@ -233,7 +249,12 @@
     </div>
     <!-- Designed by SMI SOFTS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
+        const today = new Date();
+        today.setDate(today.getDate() + 1); // Add 2 days
+        const minDate = today.toISOString().split('T')[0]; 
+        document.getElementById("dateInput").setAttribute('min', minDate);
         const Toast = Swal.mixin({
             toast: true,
             position: "top-end",
@@ -265,24 +286,21 @@
                 hour12: true
             }).format(new Date());
             formData.append("Booked_On", formattedDate);
-            fetch("https://script.google.com/macros/s/AKfycbyL5R8jodAb7VY9HH1LQZ9N2KOntCb3iwqPh6wEPhyH7ZxoyiIMPfA3TZ1HYN9yaZCAQQ/exec", { method: "POST", body: formData })
+            const params = new URLSearchParams(formData);
+            fetch("https://script.google.com/macros/s/AKfycbzzzJcZf9SchrOV9Ps0UacCXcs5-xhGdmLy_giSZVvjqSG2dclCe10sd4NFuqAXVt9opg/exec", { method: "POST", mode: "no-cors", body: formData })
                 .then((response) => {
-                    if (response.ok) {
-                        document.getElementById("booking_form").reset();
-                        document.querySelector("#book_service").disabled = false;
-                        document.querySelector("#book_service").innerHTML = `Book Service`;
-                        Toast.fire({
-                            icon: "success",
-                            title: "Service has been booked successfully",
-                        });
-                    } else {
-                        document.querySelector("#book_service").disabled = false;
-                        document.querySelector("#book_service").innerHTML = `Book Service`;
-                        Toast.fire({
-                            icon: "error",
-                            title: "Something went wrong. Please try again.",
-                        });
-                    }
+                    fetch("https://script.google.com/macros/s/AKfycbxTrkNd_gIM6w687cY-O-nWSHSr2xfr_3bpoudZwX02cDJW1QuHexuRGsuqt6sdwPwd/exec", {  // Replace with your Google Apps Script Web App URL
+                        method: "POST",
+                        mode: "no-cors",
+                        body: params,
+                    });
+                    document.getElementById("booking_form").reset();
+                    document.querySelector("#book_service").disabled = false;
+                    document.querySelector("#book_service").innerHTML = `Book Service`;
+                    Toast.fire({
+                        icon: "success",
+                        title: "Service has been booked successfully",
+                    });
                 })
                 .catch((error) => {
                     document.querySelector("#book_service").disabled = false;

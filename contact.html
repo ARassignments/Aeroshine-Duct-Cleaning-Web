@@ -27,6 +27,22 @@
     <link rel="stylesheet" href="css/config.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '670868365536192');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=670868365536192&ev=PageView&noscript=1"/>
+    </noscript>
+
 </head>
 
 <body>
@@ -325,7 +341,7 @@
                 hour12: true
             }).format(new Date());
             formData.append("Sended_On", formattedDate);
-            fetch("https://script.google.com/macros/s/AKfycbwmm713QQ6HGz7fiVrFxD7LEtlfxoJ_S1qzsA_x6HXjn6SrrM1rtkxYNwEd_5yZx4Q2/exec", { method: "POST", body: formData })
+            fetch("https://script.google.com/macros/s/AKfycbxVaFNz-HfDzZFrnDySVmqPTEEat6ruEPxNBMdAG590d7NqNSrzvuHy2a_WJmNkunBBCg/exec", { method: "POST", body: formData })
                 .then((response) => {
                     if (response.ok) {
                         document.getElementById("success_message").style.display = "block";
